@@ -2,12 +2,15 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\OrderInLayer.cs" Line="20" Column="74" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="75" Column="24" />
+      <File FileName="Assets\Scripts\OrderInLayer.cs" Line="6" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="245" Column="30" />
+      <File FileName="Assets\Scripts\Direction.cs" Line="7" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\akosb\Documents\In A Jam\Assets\Scripts\PlayerController.cs" line="252" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

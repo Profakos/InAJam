@@ -20,8 +20,20 @@ public class PlayerController : MonoBehaviour {
 	private bool writingInProgress = false;
 	private List<string> lines = new List<string>();
 
+	public Direction facing = Direction.West;
+
+	public Sprite spriteWest;
+	public Sprite spriteEast;
+	public Sprite spriteNorth;
+	public Sprite spriteSouth;
+
+	[HideInInspector]
+	public SpriteRenderer spriteRenderer;
+
 	void Awake ()
 	{
+		spriteRenderer = GetComponent<SpriteRenderer> ();
+
 		rigidBody = GetComponent<Rigidbody2D>();
 
 		if (talkBox == null)
@@ -86,17 +98,10 @@ public class PlayerController : MonoBehaviour {
 	{
 		if(Input.GetKeyDown("space"))
 		{ 
-			acceptInput = false;
-
-			lines.Clear ();
-			lines.Add ("Lorem ipsum aaaa dolor amat crocodilian telegraphic Panka");
-			lines.Add ("Crocodilum ipsum aaa bbb ccc ddd eee");
-			lines.Add ("Trallalalaaa laaa");
-
-			StartCoroutine(StartDialog());
-			 
-			rigidBody.velocity = Vector2.zero;
-			return;
+			if (ExamineFront ())
+			{
+				return;
+			}
 		}
 
 		float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -105,6 +110,84 @@ public class PlayerController : MonoBehaviour {
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 
 		rigidBody.velocity = movement * speed;
+
+		ChangeFacing (movement.normalized);
+ 
+	}
+
+	public void ChangeFacing(Vector2 newDirection)
+	{
+
+		if (newDirection.x == 0 && newDirection.y == 0)
+		{
+			return;
+		}
+
+		if (newDirection.x == 1 && newDirection.y == 1)
+		{
+			switch (facing)
+			{
+				case Direction.South:
+					facing = Direction.North;
+					break;
+				case Direction.West:
+					facing = Direction.East;
+					break;
+			}
+		}
+
+		if (newDirection.x == -1 && newDirection.y == -1)
+		{
+			switch (facing)
+			{
+				case Direction.East:
+					facing = Direction.West;
+					break;
+				case Direction.North:
+					facing = Direction.South;
+					break;
+			}
+		}
+
+		if (newDirection.x == 0)
+		{
+			if (newDirection.y == 1)
+			{
+				facing = Direction.North;
+			} 
+			else
+			{
+				facing = Direction.South;
+			}
+		} 
+
+		if (newDirection.y == 0)
+		{
+			if (newDirection.x == 1)
+			{
+				facing = Direction.East;
+			} 
+			else
+			{
+				facing = Direction.West;
+			}
+		} 
+
+		switch (facing)
+		{
+			case Direction.North:
+				spriteRenderer.sprite = spriteNorth;
+				break;
+			case Direction.East:
+				spriteRenderer.sprite = spriteEast;
+				break;
+			case Direction.South:
+				spriteRenderer.sprite = spriteSouth;
+				break;
+			case Direction.West:
+				spriteRenderer.sprite = spriteWest;
+				break;
+		}
 	}
 
 
@@ -129,6 +212,54 @@ public class PlayerController : MonoBehaviour {
 		 
 		acceptInput = true;
 		dialogOpened = true;
+	}
+
+	public bool ExamineFront()
+	{
+
+		Vector2 fwd = Vector2.zero;
+
+		switch (facing)
+		{
+
+			case(Direction.North):
+				fwd = new Vector2 (0, 1);
+				break;
+
+			case(Direction.East):
+				fwd = new Vector2 (1, 0);
+				break;
+
+			case(Direction.South):
+				fwd = new Vector2 (0, -1);
+				break;
+
+			case(Direction.West):
+				fwd = new Vector2 (-1, 0);
+				break;
+
+		}
+
+		var layerMask = 1 << LayerMask.NameToLayer("Interactable");
+
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, fwd, 2, layerMask); //, layerId);
+
+		if (!hit)
+		{
+			return false;
+		}
+
+		acceptInput = false;
+
+		lines.Clear ();
+		lines.Add ("Looks like " + hit.collider.gameObject.name + " is here!");
+		lines.Add ("Lorem ipsum aaaa dolor amat crocodilian telegraphic Panka"); 
+		lines.Add ("Trallalalaaa laaa");
+
+		StartCoroutine(StartDialog());
+		rigidBody.velocity = Vector2.zero;		
+
+		return true;
 	}
 
 	public IEnumerator CloseDialog()
