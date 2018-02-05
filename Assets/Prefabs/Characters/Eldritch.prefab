@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50078362021774210}
   - component: {fileID: 61171875520158050}
   - component: {fileID: 114872258078474632}
+  - component: {fileID: 114403610672276016}
   m_Layer: 8
   m_Name: Eldritch
   m_TagString: Untagged
@@ -88,6 +89,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &114403610672276016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171625976960682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reaction:
+    lines:
+    - Ancient, formidable, incomprehensible nerd...
+    - '... from INSIDE.'
+    - Whatever that means.
 --- !u!114 &114872258078474632
 MonoBehaviour:
   m_ObjectHideFlags: 1

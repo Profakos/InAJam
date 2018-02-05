@@ -35,3 +35,40 @@ C:\Users\akosb\Documents\In A Jam\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\akosb\Documents\In A Jam\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 C:\Users\akosb\Documents\In A Jam\obj\Debug\Assembly-CSharp.dll
 C:\Users\akosb\Documents\In A Jam\obj\Debug\Assembly-CSharp.pdb
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\nunit.framework.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEditor.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEditor.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\nunit.framework.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\akosb\Documents\InAJam\obj\Debug\Assembly-CSharp.dll
+C:\Users\akosb\Documents\InAJam\obj\Debug\Assembly-CSharp.pdb

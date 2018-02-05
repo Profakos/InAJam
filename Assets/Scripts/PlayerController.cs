@@ -242,19 +242,28 @@ public class PlayerController : MonoBehaviour {
 
 		var layerMask = 1 << LayerMask.NameToLayer("Interactable");
 
-		RaycastHit2D hit = Physics2D.Raycast (transform.position, fwd, 2, layerMask); //, layerId);
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, fwd, 2, layerMask);  
 
 		if (!hit)
 		{
 			return false;
 		}
 
+		Interactable interactable = hit.transform.gameObject.GetComponent<Interactable> ();
+
+		if (interactable == null) 
+		{
+			return false;
+		}
+
 		acceptInput = false;
 
-		lines.Clear ();
-		lines.Add ("Looks like " + hit.collider.gameObject.name + " is here!");
-		lines.Add ("Lorem ipsum aaaa dolor amat crocodilian telegraphic Panka"); 
-		lines.Add ("Trallalalaaa laaa");
+
+		Reaction reaction = interactable.Interact ();
+
+		lines.Clear (); 
+
+		lines.AddRange (reaction.lines);
 
 		StartCoroutine(StartDialog());
 		rigidBody.velocity = Vector2.zero;		

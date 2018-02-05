@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50816518215740464}
   - component: {fileID: 61734005264322202}
   - component: {fileID: 114457029519951410}
+  - component: {fileID: 114982000031492694}
   m_Layer: 8
   m_Name: Gardener
   m_TagString: Untagged
@@ -100,6 +101,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &114982000031492694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1681900548164964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reaction:
+    lines:
+    - A vague crocodilian botanist!
+    - What does a botanis do in an energetics lab?
 --- !u!212 &212419681145418910
 SpriteRenderer:
   m_ObjectHideFlags: 1
