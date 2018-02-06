@@ -58,6 +58,12 @@ public class PlayerController : MonoBehaviour {
 
 	void Update ()
 	{
+
+		if (Input.GetKeyDown ("escape")) 
+		{
+			Application.Quit ();
+		}
+
 		if (!acceptInput)
 		{
 			return;
