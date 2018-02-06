@@ -80,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.5, y: 2.5}
+    oldSize: {x: 2.6, y: 2.6}
     newSize: {x: 2.5, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -101,9 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reaction:
-    lines:
-    - This guy is a nanotechnician. He claims to be an alchemist though.
-    - For some reason.
+    reactions:
+    - displayedText: This guy is a nanotechnician. He claims to be an alchemist though.
+    - displayedText: For some reason.
 --- !u!114 &114957314539803410
 MonoBehaviour:
   m_ObjectHideFlags: 1

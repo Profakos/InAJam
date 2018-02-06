@@ -80,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.5, y: 2.5}
+    oldSize: {x: 2.6, y: 2.6}
     newSize: {x: 2.5, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reaction:
-    lines:
-    - Ancient, formidable, incomprehensible nerd...
-    - '... from INSIDE.'
-    - Whatever that means.
+    reactions:
+    - displayedText: Ancient, formidable, incomprehensible nerd...
+    - displayedText: '... from INSIDE.'
+    - displayedText: Whatever that means.
 --- !u!114 &114872258078474632
 MonoBehaviour:
   m_ObjectHideFlags: 1

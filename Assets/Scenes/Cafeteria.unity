@@ -627,16 +627,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114982000031492694, guid: a8be54a9ff9530d4688f98732e26b920,
-        type: 2}
-      propertyPath: reaction.lines.Array.data[1]
-      value: What does a botanist do in an energetics lab?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114982000031492694, guid: a8be54a9ff9530d4688f98732e26b920,
-        type: 2}
-      propertyPath: reaction.lines.Array.data[0]
-      value: A friendly vague crocodilian botanist!
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
   m_IsPrefabParent: 0
