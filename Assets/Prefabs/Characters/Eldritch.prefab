@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114403610672276016}
   m_Layer: 8
   m_Name: Eldritch
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

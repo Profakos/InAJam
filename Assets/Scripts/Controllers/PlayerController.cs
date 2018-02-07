@@ -21,8 +21,9 @@ public class PlayerController : MonoBehaviour {
 	private bool lineCompleted = false;
 	private Coroutine currentWordByWord = null;
 
-	private List<Reaction> reactions = new List<Reaction>();
+	private List<Reaction> queuedReactions = new List<Reaction>();
 
+	private Dictionary<string, string> gameState = new Dictionary<string, string> (); 
 
 	public Direction facing = Direction.West;
 
@@ -81,10 +82,33 @@ public class PlayerController : MonoBehaviour {
 
 	public void HandleDialog()
 	{
-		if (fireNextLine && reactions.Count > 0)
+		if (fireNextLine && queuedReactions.Count > 0)
 		{
 			fireNextLine = false;
-			currentWordByWord = StartCoroutine (WordByWord (reactions [0].displayedText));
+			currentWordByWord = StartCoroutine (WordByWord (queuedReactions [0].displayedText));
+
+			if (queuedReactions [0].objectsToRemove.Count > 0) 
+			{
+				foreach (GameObject gO in queuedReactions[0].objectsToRemove) 
+				{
+					gO.SetActive (false);
+				}
+			}
+
+			if (queuedReactions [0].setGameState.Count != 0) 
+			{
+				foreach (var gS in queuedReactions [0].setGameState) 
+				{
+					if (gameState.ContainsKey (gS.name)) 
+					{
+						gameState [gS.name] = gS.value;
+					} else 
+					{
+						gameState.Add (gS.name, gS.value);
+					}
+				}			
+			}
+
 			return;
 		}
    
@@ -92,11 +116,11 @@ public class PlayerController : MonoBehaviour {
 		{   	
 			if (lineCompleted) 
 			{
-				reactions.RemoveAt (0);
+				queuedReactions.RemoveAt (0);
 				fireNextLine = true;
-				if (reactions.Count == 0) 
+				if (queuedReactions.Count == 0) 
 				{
-					reactions.Clear ();
+					queuedReactions.Clear ();
 					StartCoroutine (CloseDialog ());
 					return;
 				}
@@ -104,7 +128,7 @@ public class PlayerController : MonoBehaviour {
 			else 
 			{
 				StopCoroutine (currentWordByWord);
-				talkBoxText.text = reactions [0].displayedText;
+				talkBoxText.text = queuedReactions [0].displayedText;
 				lineCompleted = true;
 			}
 
@@ -276,11 +300,11 @@ public class PlayerController : MonoBehaviour {
 		acceptInput = false;
 
 
-		ReactionCollection reactionCollection = interactable.Interact ();
+		ReactionCollection reactionCollection = interactable.Interact (gameState);
 
-		reactions.Clear (); 
+		queuedReactions.Clear (); 
 
-		reactions.AddRange (reactionCollection.reactions);
+		queuedReactions.AddRange (reactionCollection.reactions);
 
 		StartCoroutine(OpenDialog());
 		rigidBody.velocity = Vector2.zero;		

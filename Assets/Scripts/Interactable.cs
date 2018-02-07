@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour 
 {
-	public ReactionCollection reaction = new ReactionCollection ();
+	public List<ReactionCollection> conditionalReactions = new List<ReactionCollection> ();
 
-	public ReactionCollection Interact()
+	public ReactionCollection defaultReaction = new ReactionCollection ();
+ 
+
+	public ReactionCollection Interact(Dictionary<string, string> gameState)
 	{
-		return reaction;
+		foreach (var cR in conditionalReactions) 
+		{
+			if (cR.ConditionSatisfied (gameState)) 
+			{
+				return cR;
+			}
+		}
+		
+		return defaultReaction;
 	}
 }

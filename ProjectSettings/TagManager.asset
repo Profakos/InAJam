@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Character
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -42,7 +44,7 @@ TagManager:
   - name: Floor
     uniqueID: 2160128559
     locked: 0
-  - name: Character
+  - name: OnFloor
     uniqueID: 3960337717
     locked: 0
   - name: Default

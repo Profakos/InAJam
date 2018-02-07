@@ -131,11 +131,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4587707318572108, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 4587707318572108, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 4587707318572108, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -214,6 +214,41 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].reactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[0].setGameState.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].reactions.Array.data[0].setGameState.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[1].setGameState.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4662922042736390, guid: c86bc59215b38664a91c321436e05a61, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.7
@@ -245,6 +280,86 @@ Prefab:
     - target: {fileID: 4662922042736390, guid: c86bc59215b38664a91c321436e05a61, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[0].displayedText
+      value: An ancient and incomprehensible nerd.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[1].displayedText
+      value: From the depths of INSIDE.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[2].displayedText
+      value: Whatever that is.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[0].displayedText
+      value: I LOVE JAM. I WOULD LIKE TO CONSUME SOME.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[0].setGameState.Array.data[0].name
+      value: JAMMED
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[0].setGameState.Array.data[0].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].condition.name
+      value: JAMMED
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].condition.value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].condition.name
+      value: JAMMED
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].condition.value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].reactions.Array.data[0].displayedText
+      value: YOUR POWER OF JAM HAS BEEN NOTED.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].reactions.Array.data[0].setGameState.Array.data[0].name
+      value: JAMMED
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[1].reactions.Array.data[0].setGameState.Array.data[0].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[1].displayedText
+      value: The creature consumes the entire jar.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[1].setGameState.Array.data[0].name
+      value: JAMMED
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403610672276016, guid: c86bc59215b38664a91c321436e05a61,
+        type: 2}
+      propertyPath: conditionalReactions.Array.data[0].reactions.Array.data[1].setGameState.Array.data[0].value
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c86bc59215b38664a91c321436e05a61, type: 2}
@@ -348,6 +463,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114186923698820540, guid: aa8eb2b69dad5844bae15a174ddfe8cd,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4864672967872256, guid: aa8eb2b69dad5844bae15a174ddfe8cd, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.06
@@ -379,6 +499,16 @@ Prefab:
     - target: {fileID: 4864672967872256, guid: aa8eb2b69dad5844bae15a174ddfe8cd, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114186923698820540, guid: aa8eb2b69dad5844bae15a174ddfe8cd,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[0].displayedText
+      value: A nanotechnician.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114186923698820540, guid: aa8eb2b69dad5844bae15a174ddfe8cd,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[1].displayedText
+      value: Claims to be an alchemist.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa8eb2b69dad5844bae15a174ddfe8cd, type: 2}
@@ -470,7 +600,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692397103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 1.94, y: 0.86, z: 90}
   m_LocalScale: {x: 0.023364486, y: 0.023364486, z: 0.023364486}
   m_Children:
   - {fileID: 12755716}
@@ -588,6 +718,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 576cbf34715d31040afc2accc4287b4f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1149512010
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012194745122284, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 07b01e4a0d4005c498a7d95d5fc831dd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1154812159
 Prefab:
   m_ObjectHideFlags: 0
@@ -595,6 +767,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114982000031492694, guid: a8be54a9ff9530d4688f98732e26b920,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4078191530505204, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
       propertyPath: m_LocalPosition.x
       value: -3.7132285
@@ -626,6 +803,16 @@ Prefab:
     - target: {fileID: 4078191530505204, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114982000031492694, guid: a8be54a9ff9530d4688f98732e26b920,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[0].displayedText
+      value: A friendly gardener!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114982000031492694, guid: a8be54a9ff9530d4688f98732e26b920,
+        type: 2}
+      propertyPath: defaultReaction.reactions.Array.data[1].displayedText
+      value: Why is there a gardener in this facility?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}

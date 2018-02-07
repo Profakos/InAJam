@@ -7,4 +7,8 @@ public class Reaction
 {
 	public string displayedText;
  
+	public List<GameObject> objectsToRemove = new List<GameObject>();
+
+	public List<Condition> setGameState = new List<Condition>(); 
+
 }

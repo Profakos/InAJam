@@ -55,8 +55,9 @@
      <Compile Include="Assets\Scripts\Direction.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Scripts\OrderInLayer.cs" />
-     <Compile Include="Assets\Scripts\Reactions\Reaction.cs" />
-     <Compile Include="Assets\Scripts\Reactions\ReactionCollection.cs" />
+     <Compile Include="Assets\Scripts\ReactionsConditions\Condition.cs" />
+     <Compile Include="Assets\Scripts\ReactionsConditions\Reaction.cs" />
+     <Compile Include="Assets\Scripts\ReactionsConditions\ReactionCollection.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
