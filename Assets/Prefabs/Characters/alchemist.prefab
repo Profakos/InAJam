@@ -100,10 +100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reaction:
-    reactions:
-    - displayedText: This guy is a nanotechnician. He claims to be an alchemist though.
-    - displayedText: For some reason.
+  conditionalReactions: []
+  defaultReaction:
+    condition:
+      name: 
+      value: 
+    reactions: []
 --- !u!114 &114957314539803410
 MonoBehaviour:
   m_ObjectHideFlags: 1

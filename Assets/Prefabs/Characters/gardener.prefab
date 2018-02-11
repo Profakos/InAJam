@@ -112,10 +112,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reaction:
-    reactions:
-    - displayedText: ' A vague crocodilian botanist!'
-    - displayedText: What does a botanist do in an energetics lab?
+  conditionalReactions: []
+  defaultReaction:
+    condition:
+      name: 
+      value: 
+    reactions: []
 --- !u!212 &212419681145418910
 SpriteRenderer:
   m_ObjectHideFlags: 1
