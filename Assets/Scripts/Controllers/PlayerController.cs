@@ -9,18 +9,21 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D rigidBody;
 
-	private bool acceptInput = true;
+	private bool acceptInput = false;
 
 	private bool dialogOpened;
 
 	public GameObject talkBox;
+	private GameObject nameBox;
 
 	private UnityEngine.UI.Text talkBoxText;
+	private UnityEngine.UI.Text nameBoxText;
 
 	private bool fireNextLine = true;
 	private bool lineCompleted = false;
 	private Coroutine currentWordByWord = null;
 
+	public List<ReactionCollection> cutscenesCollection = new List<ReactionCollection>();
 	private List<Reaction> queuedReactions = new List<Reaction>();
 
 	private Dictionary<string, string> gameState = new Dictionary<string, string> (); 
@@ -37,6 +40,8 @@ public class PlayerController : MonoBehaviour {
 
 	void Awake ()
 	{
+		Cursor.visible = false;
+
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 
 		rigidBody = GetComponent<Rigidbody2D>();
@@ -54,7 +59,25 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		talkBoxText = talkBoxTextTransform.GetComponent<Text> ();
- 
+
+		var nameBoxTransform = talkBox.transform.Find ("NameBox");
+
+		nameBox = nameBoxTransform.gameObject;
+
+		var nameBoxTextTransform = nameBox.transform.Find("NameBoxText");
+
+		if (nameBoxTextTransform == null)
+		{
+			return;
+		}
+
+		nameBoxText = nameBoxTextTransform.GetComponent<Text> ();
+
+	}
+
+	void Start()
+	{
+		StartCutscene ("START");
 	}
 
 	void Update ()
@@ -80,12 +103,36 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	public void StartCutscene(string name)
+	{
+		var cutScene = cutscenesCollection.Find (m => m.reactionCollectionName == name);
+
+		if (cutScene != null)
+		{
+			queuedReactions.AddRange (cutScene.reactions);
+			cutscenesCollection.Remove (cutScene);
+			StartCoroutine (OpenDialog ());
+		} else
+		{
+			acceptInput = false;
+		}
+	}
+
 	public void HandleDialog()
 	{
 		if (fireNextLine && queuedReactions.Count > 0)
 		{
 			fireNextLine = false;
-			currentWordByWord = StartCoroutine (WordByWord (queuedReactions [0].displayedText));
+			currentWordByWord = StartCoroutine (WordByWord (queuedReactions [0].text));
+
+			if (!string.IsNullOrEmpty (queuedReactions [0].displayName))
+			{
+				nameBox.SetActive (true);
+				nameBoxText.text = queuedReactions [0].displayName;
+			} else
+			{
+				nameBox.SetActive (false);
+			}
 
 			if (queuedReactions [0].objectsToRemove.Count > 0) 
 			{
@@ -128,7 +175,7 @@ public class PlayerController : MonoBehaviour {
 			else 
 			{
 				StopCoroutine (currentWordByWord);
-				talkBoxText.text = queuedReactions [0].displayedText;
+				talkBoxText.text = queuedReactions [0].text;
 				lineCompleted = true;
 			}
 
@@ -238,6 +285,8 @@ public class PlayerController : MonoBehaviour {
 
 		talkBox.SetActive (true); 
 
+		nameBox.SetActive (false);
+
 		while (talkBox.transform.localScale.x < 1)
 		{
 			if (talkBox.transform.localScale.x >= 0.9)
@@ -314,6 +363,7 @@ public class PlayerController : MonoBehaviour {
 
 	public IEnumerator CloseDialog()
 	{
+		nameBox.SetActive (false);
 
 		while (talkBox.transform.localScale.x > 0)
 		{

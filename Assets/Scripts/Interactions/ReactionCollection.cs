@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class ReactionCollection 
 {
+	public string reactionCollectionName;
+
 	public Condition condition = new Condition ();
 
 	public List<Reaction> reactions = new List<Reaction>();

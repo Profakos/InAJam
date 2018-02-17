@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 114458846385242744}
   - component: {fileID: 50460778023252870}
   - component: {fileID: 61340477558296640}
+  - component: {fileID: 114077983891068446}
   m_Layer: 8
-  m_Name: Plant01
+  m_Name: Plants
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,8 +80,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 2.2}
-    newSize: {x: 1.6, y: 2.6}
+    oldSize: {x: 3, y: 3.2}
+    newSize: {x: 3, y: 3.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -88,6 +89,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7461891, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &114077983891068446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1882029461571080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conditionalReactions: []
+  defaultReaction:
+    reactionCollectionName: 
+    condition:
+      name: 
+      value: 
+    reactions:
+    - displayName: 
+      text: Exotic plants from the Garden Of Teeth.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
 --- !u!114 &114458846385242744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,12 +160,12 @@ SpriteRenderer:
   m_SortingLayerID: -334629579
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d93bfef2697a5c64c9e319b0d7edad37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 745436db8a26bb945a99cef9d27119e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6, y: 2.6}
+  m_Size: {x: 3, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

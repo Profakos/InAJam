@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1768925194488270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.21, y: 2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4852799117719862}
@@ -188,7 +188,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   talkBox: {fileID: 0}
-  facing: 2
+  cutscenesCollection:
+  - reactionCollectionName: START
+    condition:
+      name: 
+      value: 
+    reactions:
+    - displayName: Loudspeaker
+      text: '"Attention, we have an important message to all employees. The snack
+        bar on level four is opening soon."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Loudspeaker
+      text: '"We extend a hearty welcome Grylla #113, to HECKWALKERS INC, strange
+        energy research facility."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Grylla
+      text: '"That is me!" '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Loudspeaker
+      text: '"She will soon finish the opening ceremony. Please be nice to her. We
+        don''t want a repeat of the CHEFINATOR-3000 incident."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\"Incident\u2026? Er... No, can't think of that right now.\" "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Grylla
+      text: '"I must focus to make the Queen proud... To fulfill my destiny..."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+    - displayName: 
+      text: Behind you, the painting of the Queen gives a silent thumbs up.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      objectsToRemove: []
+      setGameState: []
+  facing: 3
   spriteWest: {fileID: 21300000, guid: 8289f2032fd455b4ba2b92393d535e47, type: 3}
   spriteEast: {fileID: 21300000, guid: d5ae8a2fdb036f4479ecf7958f8abe96, type: 3}
   spriteNorth: {fileID: 21300000, guid: 80909f7636864f446b59a3447a246dcf, type: 3}
@@ -235,7 +293,7 @@ SpriteRenderer:
   m_SortingLayerID: -334629579
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d5ae8a2fdb036f4479ecf7958f8abe96, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8289f2032fd455b4ba2b92393d535e47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

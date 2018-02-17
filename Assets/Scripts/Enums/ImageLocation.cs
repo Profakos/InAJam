@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Direction {
-	North,
-	East,
-	South,
-	West,
+public enum ImageLocation {
+	Left,
+	Center,
+	Right
+
 }
