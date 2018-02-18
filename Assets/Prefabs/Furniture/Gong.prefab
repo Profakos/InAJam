@@ -100,18 +100,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
-  defaultReaction:
-    reactionCollectionName: 
-    condition:
-      name: 
-      value: 
+  conditionalReactions:
+  - reactionCollectionName: 
+    conditionList:
+    - name: GONGED
+      value: 1
     reactions:
     - displayName: 
-      text: A gong. A very subtle way of gaining attention.
+      text: 'The HR person allowed only one subtle gong per shift. '
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+  defaultReaction:
+    reactionCollectionName: 
+    conditionList: []
+    reactions:
+    - displayName: 
+      text: The ceremonial cafeteria opening gong. A very subtle way of gaining attention.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options:
+      - Gong the gong
+      - Don't the don't
       objectsToRemove: []
       setGameState: []
 --- !u!114 &114396077137558328

@@ -94,15 +94,24 @@ MonoBehaviour:
   conditionalReactions: []
   defaultReaction:
     reactionCollectionName: Examine Portrait
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: 
-      text: 'A strange combination of an arcade machine and a coffee dispenser. '
+      text: A CFE OFE brand coffee machine.
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: 
+      text: 'It is a strange combination of an arcade machine and a coffee dispenser. '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: 
@@ -110,6 +119,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
 --- !u!212 &212945395642049940

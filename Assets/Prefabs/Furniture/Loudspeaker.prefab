@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1177985096388572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: 4.77, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8633201, y: -3.3015838, z: 0.09098805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,15 +94,15 @@ MonoBehaviour:
   conditionalReactions: []
   defaultReaction:
     reactionCollectionName: 
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: 
-      text: Seems to have an emergency intercom installed.
+      text: This loudspeaker seems to have an emergency intercom installed.
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
 --- !u!212 &212302952771965812

@@ -190,9 +190,7 @@ MonoBehaviour:
   talkBox: {fileID: 0}
   cutscenesCollection:
   - reactionCollectionName: START
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: Loudspeaker
       text: '"Attention, we have an important message to all employees. The snack
@@ -200,6 +198,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: Loudspeaker
@@ -208,6 +208,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: Grylla
@@ -215,6 +217,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: Loudspeaker
@@ -223,6 +227,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: Grylla
@@ -230,6 +236,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: Grylla
@@ -237,6 +245,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: 
@@ -244,8 +254,90 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
+  - reactionCollectionName: Don't the don't
+    conditionList: []
+    reactions:
+    - displayName: 
+      text: You decide to put off subtly sounding the ceremonial gong.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+  - reactionCollectionName: Gong the gong
+    conditionList: []
+    reactions:
+    - displayName: 
+      text: You lightly tap the gong with your spoon.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: 
+      text: GOOOONNNNGGG
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: f23a0d84253d4ec42a855f2ff714236b, type: 3}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: ???
+      text: " \u201COi, you heard that?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: ad7a298c6579d8b4cba78225dcaa4599, type: 3}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Chlorine
+      text: '"They are open! Hullo!!!!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: f4de1fe05b3ddad419d4ad7f39b14ca5, type: 3}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: "N\u2019smithothep"
+      text: "\u201CTHE GATE HAS OPENED BEFORE ME, AND I ARRIVE. HI.\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: ed48f9767bdfaf445a28e83502214acd, type: 3}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Halfred
+      text: "\u201CThankfully no fireworks this time. Hmph. Good day.\u201D"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: b696be5ebe751e647877f5bc72162e96, type: 3}
+      options: []
+      objectsToRemove: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CGasp! New friends!\u201D"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 3f2a272cbb1db564896345287a009b89, type: 3}
+      options: []
+      objectsToRemove: []
+      setGameState:
+      - name: GONGED
+        value: 1
   facing: 3
   spriteWest: {fileID: 21300000, guid: 8289f2032fd455b4ba2b92393d535e47, type: 3}
   spriteEast: {fileID: 21300000, guid: d5ae8a2fdb036f4479ecf7958f8abe96, type: 3}

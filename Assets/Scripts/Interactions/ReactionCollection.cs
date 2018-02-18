@@ -7,18 +7,21 @@ public class ReactionCollection
 {
 	public string reactionCollectionName;
 
-	public Condition condition = new Condition ();
+	public List<Condition> conditionList = new List<Condition> ();
 
 	public List<Reaction> reactions = new List<Reaction>();
 
 	public bool ConditionSatisfied(Dictionary<string, string> gameState)
 	{
-		if (gameState.ContainsKey (condition.name) && gameState [condition.name] == condition.value) 
+		foreach (var condition in conditionList) 
 		{
-			return true;
+			if (!gameState.ContainsKey (condition.name) || gameState [condition.name] != condition.value)
+			{
+				return false;
+			}
 		}
 
-		return false;
+		return true;
 	}
 
 }

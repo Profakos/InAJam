@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1882029461571080}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5, y: 3.73, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.69, y: -3.39, z: 0.09098805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.089203835, y: 0.25}
+  m_Offset: {x: 0.03586912, y: 0.2965815}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7461891, y: 0.5}
+  m_Size: {x: 2.7017813, y: 0.593163}
   m_EdgeRadius: 0
 --- !u!114 &114077983891068446
 MonoBehaviour:
@@ -103,15 +103,15 @@ MonoBehaviour:
   conditionalReactions: []
   defaultReaction:
     reactionCollectionName: 
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: 
       text: Exotic plants from the Garden Of Teeth.
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
 --- !u!114 &114458846385242744

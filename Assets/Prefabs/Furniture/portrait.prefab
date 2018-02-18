@@ -82,9 +82,7 @@ MonoBehaviour:
   conditionalReactions: []
   defaultReaction:
     reactionCollectionName: Examine Portrait
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: 
       text: 'A oil painting (technically) of Queen Of Hive #113. She is a Grower class
@@ -92,6 +90,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
     - displayName: 
@@ -99,6 +99,8 @@ MonoBehaviour:
       portrait: 
       imageLocation: 0
       flipImage: 0
+      sprite: {fileID: 0}
+      options: []
       objectsToRemove: []
       setGameState: []
 --- !u!114 &114616864197331024

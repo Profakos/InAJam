@@ -403,21 +403,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4587707318572108, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.21
@@ -455,99 +440,6 @@ Prefab:
       propertyPath: talkBox
       value: 
       objectReference: {fileID: 12755715}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactionCollectionName
-      value: Don't the don't
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[0].displayName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[0].text
-      value: You decide to put off subtly sounding the ceremonial gong.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[1].displayName
-      value: Loudspeaker
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[1].text
-      value: '"We extend a hearty welcome to Grylla #113, to HECKWALKERS INC, strange
-        energy research facility."'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[2].displayName
-      value: Grylla
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[2].text
-      value: '"That is me!" '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[3].displayName
-      value: Loudspeaker
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[3].text
-      value: '"She will soon finish the opening ceremony. Please be nice to her. We
-        don''t want a repeat of the CHEFINATOR-3000 incident."'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[4].displayName
-      value: Grylla
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[4].text
-      value: "\"Incident\u2026? Er... No, can't think of that right now.\" "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[5].displayName
-      value: Grylla
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[5].text
-      value: '"I must focus to make the Queen proud... To fulfill my destiny..."'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[1].reactions.Array.data[6].text
-      value: Behind you, the painting of the Queen gives a silent thumbs up.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactionCollectionName
-      value: Gong the gong
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[0].text
-      value: You lightly tap the gong with your spoon.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[1].text
-      value: GOOOONNNNGGG
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[1].sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f23a0d84253d4ec42a855f2ff714236b,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
   m_IsPrefabParent: 0
@@ -694,30 +586,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1882029461571080, guid: 34999da48cab47146a227af3f093df00, type: 2}
-      propertyPath: m_Name
-      value: Plants
-      objectReference: {fileID: 0}
-    - target: {fileID: 61340477558296640, guid: 34999da48cab47146a227af3f093df00,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.03586912
-      objectReference: {fileID: 0}
-    - target: {fileID: 61340477558296640, guid: 34999da48cab47146a227af3f093df00,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2.7017813
-      objectReference: {fileID: 0}
-    - target: {fileID: 61340477558296640, guid: 34999da48cab47146a227af3f093df00,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.2965815
-      objectReference: {fileID: 0}
-    - target: {fileID: 61340477558296640, guid: 34999da48cab47146a227af3f093df00,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.593163
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34999da48cab47146a227af3f093df00, type: 2}
   m_IsPrefabParent: 0
@@ -804,7 +672,7 @@ RectTransform:
   m_GameObject: {fileID: 692397103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.21, y: 2.25, z: 90}
-  m_LocalScale: {x: 0.027777778, y: 0.027777778, z: 0.027777778}
+  m_LocalScale: {x: 0.023364486, y: 0.023364486, z: 0.023364486}
   m_Children:
   - {fileID: 12755716}
   m_Father: {fileID: 0}
@@ -967,21 +835,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 764810262}
     m_Modifications:
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[0].reactions.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[1].reactions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4240121629551160, guid: 0b099c5f37fd1ce47b07737c746af8dc, type: 2}
       propertyPath: m_LocalPosition.x
       value: 6.68
@@ -1013,51 +866,6 @@ Prefab:
     - target: {fileID: 4240121629551160, guid: 0b099c5f37fd1ce47b07737c746af8dc, type: 2}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[0]
-      value: Gong the gong
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[1]
-      value: Don't the don't
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[0].reactionCollectionName
-      value: Gong the gong
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[1].reactionCollectionName
-      value: Don't the don't
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[0].reactions.Array.data[0].text
-      value: You subtly tap the gong with your spoon.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[0].reactions.Array.data[1].text
-      value: '*GONNNNG*'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[1].reactions.Array.data[0].text
-      value: You decide to delay the grand opening a bit.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].options.Array.data[1].reactions.Array.data[0].imageLocation
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114160468462961948, guid: 0b099c5f37fd1ce47b07737c746af8dc,
-        type: 2}
-      propertyPath: defaultReaction.reactions.Array.data[0].text
-      value: The ceremonial cafeteria opening gong. A very subtle way of gaining attention.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b099c5f37fd1ce47b07737c746af8dc, type: 2}
@@ -2139,7 +1947,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1925741425}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114.850006, y: 175.9, z: 0}
+  m_LocalPosition: {x: 192.35, y: 175.9, z: 0}
   m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
   m_Children:
   - {fileID: 1212536208}
