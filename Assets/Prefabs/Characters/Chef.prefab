@@ -203,7 +203,7 @@ MonoBehaviour:
       objectsToRemove: []
       setGameState: []
     - displayName: Loudspeaker
-      text: '"We extend a hearty welcome Grylla #113, to HECKWALKERS INC, strange
+      text: '"We extend a hearty welcome to Grylla #113, to HECKWALKERS INC, strange
         energy research facility."'
       portrait: 
       imageLocation: 0

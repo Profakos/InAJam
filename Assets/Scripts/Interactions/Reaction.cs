@@ -14,9 +14,12 @@ public class Reaction
 	public ImageLocation imageLocation;
 
 	public bool flipImage;
+
+	public List<string> options = new List<string>();
  
-	public List<GameObject> objectsToRemove = new List<GameObject>();
+	public List<string> objectsToRemove = new List<string>();
 
 	public List<Condition> setGameState = new List<Condition>(); 
+
 
 }

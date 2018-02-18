@@ -15,13 +15,16 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject talkBox;
 	private GameObject nameBox;
+	private GameObject choiceBox;
 
 	private UnityEngine.UI.Text talkBoxText;
 	private UnityEngine.UI.Text nameBoxText;
+	private UnityEngine.UI.Text choiceBoxText;
 
 	private bool fireNextLine = true;
 	private bool lineCompleted = false;
 	private Coroutine currentWordByWord = null;
+	private int choiceIndex = 0;
 
 	public List<ReactionCollection> cutscenesCollection = new List<ReactionCollection>();
 	private List<Reaction> queuedReactions = new List<Reaction>();
@@ -53,12 +56,10 @@ public class PlayerController : MonoBehaviour {
 
 		var talkBoxTextTransform = talkBox.transform.Find("TalkBoxText");
 
-		if (talkBoxTextTransform == null)
-		{
-			return;
+		if (talkBoxTextTransform != null)
+		{		
+			talkBoxText = talkBoxTextTransform.GetComponent<Text> ();
 		}
-
-		talkBoxText = talkBoxTextTransform.GetComponent<Text> ();
 
 		var nameBoxTransform = talkBox.transform.Find ("NameBox");
 
@@ -66,18 +67,28 @@ public class PlayerController : MonoBehaviour {
 
 		var nameBoxTextTransform = nameBox.transform.Find("NameBoxText");
 
-		if (nameBoxTextTransform == null)
+		if (nameBoxTextTransform != null)
 		{
-			return;
+			nameBoxText = nameBoxTextTransform.GetComponent<Text> ();
 		}
 
-		nameBoxText = nameBoxTextTransform.GetComponent<Text> ();
+
+		var choiceBoxTransform = talkBox.transform.Find ("ChoiceBox");
+
+		choiceBox = choiceBoxTransform.gameObject;
+
+		var choiceBoxTextTransform = choiceBox.transform.Find("ChoiceBoxText");
+
+		if (choiceBoxTextTransform != null)
+		{
+			choiceBoxText = choiceBoxTextTransform.GetComponent<Text> ();
+		}
 
 	}
 
 	void Start()
 	{
-		StartCutscene ("START");
+		InsertCutscene ("START", 0);
 	}
 
 	void Update ()
@@ -103,14 +114,13 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void StartCutscene(string name)
+	public void InsertCutscene(string name, int insertLocation)
 	{
 		var cutScene = cutscenesCollection.Find (m => m.reactionCollectionName == name);
 
 		if (cutScene != null)
 		{
-			queuedReactions.AddRange (cutScene.reactions);
-			cutscenesCollection.Remove (cutScene);
+			queuedReactions.InsertRange (insertLocation, cutScene.reactions);
 			StartCoroutine (OpenDialog ());
 		} else
 		{
@@ -136,8 +146,15 @@ public class PlayerController : MonoBehaviour {
 
 			if (queuedReactions [0].objectsToRemove.Count > 0) 
 			{
-				foreach (GameObject gO in queuedReactions[0].objectsToRemove) 
+				foreach (string name in queuedReactions[0].objectsToRemove) 
 				{
+					var gO = GameObject.Find ("ItemHolder/" + name);
+
+					if (gO == null)
+					{
+						continue;
+					}
+
 					gO.SetActive (false);
 				}
 			}
@@ -158,11 +175,51 @@ public class PlayerController : MonoBehaviour {
 
 			return;
 		}
+
+		if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+		{
+			if (queuedReactions [0].options.Count != 0)
+			{
+				choiceIndex--;
+
+				if (choiceIndex < 0)
+				{
+					choiceIndex = queuedReactions [0].options.Count - 1;
+				}
+
+				DisplayOptions ();
+			}
+			return;
+		}
+
+		if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+		{
+			if (queuedReactions [0].options.Count != 0)
+			{
+				choiceIndex++;
+
+				if (choiceIndex >= queuedReactions [0].options.Count)
+				{
+					choiceIndex = 0;
+				}
+
+				DisplayOptions ();
+			}
+			return;
+		}
+
    
 		if(Input.GetKeyDown("space"))
 		{   	
 			if (lineCompleted) 
 			{
+				if (queuedReactions [0].options.Count > 0)
+				{
+					choiceBox.SetActive (false);
+					var selectedOption = queuedReactions [0].options [choiceIndex];
+					InsertCutscene (selectedOption, 1);
+				}
+
 				queuedReactions.RemoveAt (0);
 				fireNextLine = true;
 				if (queuedReactions.Count == 0) 
@@ -176,10 +233,45 @@ public class PlayerController : MonoBehaviour {
 			{
 				StopCoroutine (currentWordByWord);
 				talkBoxText.text = queuedReactions [0].text;
-				lineCompleted = true;
+				FinishLine ();
 			}
 
 		}		
+	}
+
+	public void FinishLine()
+	{
+		var options = queuedReactions [0].options;
+
+		if (options != null && options.Count > 0)
+		{
+			choiceIndex = 0;
+			DisplayOptions ();
+		}
+
+		lineCompleted = true;
+	}
+
+	public void DisplayOptions()
+	{
+		choiceBox.SetActive (true);
+
+		var currentLine = 0;
+
+		var displayText = string.Empty;
+
+		foreach (var choice in queuedReactions[0].options)
+		{ 
+			if (choiceIndex == currentLine)
+			{
+				displayText += ">";
+			}
+
+			displayText += choice + "\n";
+			currentLine++;
+		}
+
+		choiceBoxText.text = displayText;
 	}
 
 	public void HandleMove()
@@ -286,6 +378,8 @@ public class PlayerController : MonoBehaviour {
 		talkBox.SetActive (true); 
 
 		nameBox.SetActive (false);
+
+		choiceBox.SetActive (false);
 
 		while (talkBox.transform.localScale.x < 1)
 		{
@@ -404,7 +498,7 @@ public class PlayerController : MonoBehaviour {
 			yield return new WaitForSeconds(0.1f);
 		}
 
-		lineCompleted = true;
+		FinishLine ();
 	}
 
 }
