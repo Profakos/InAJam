@@ -19,7 +19,9 @@ public class Reaction
 
 	public List<string> options = new List<string>();
  
-	public List<string> objectsToRemove = new List<string>();
+	public List<string> objectsToDisable = new List<string>();
+
+	public List<string> objectsToEnable = new List<string>();
 
 	public List<Condition> setGameState = new List<Condition>(); 
 

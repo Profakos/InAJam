@@ -92,16 +92,18 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: 
-      text: You were kinda created for this job
+      text: You were kinda created for this job.
       portrait: 
       imageLocation: 0
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
 --- !u!114 &114616864197331024
 MonoBehaviour:

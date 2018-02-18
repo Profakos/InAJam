@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour {
 	private Coroutine currentWordByWord = null;
 	private int choiceIndex = 0;
 
+	public List<GameObject> reactionActiavateables = new List<GameObject>();
+
 	public List<ReactionCollection> cutscenesCollection = new List<ReactionCollection>();
 	private List<Reaction> queuedReactions = new List<Reaction>();
 
@@ -165,11 +167,11 @@ public class PlayerController : MonoBehaviour {
 				imageBox.SetActive (false);
 			}
 
-			if (queuedReactions [0].objectsToRemove.Count > 0) 
+			if (queuedReactions [0].objectsToDisable.Count > 0) 
 			{
-				foreach (string name in queuedReactions[0].objectsToRemove) 
+				foreach (string name in queuedReactions[0].objectsToDisable) 
 				{
-					var gO = GameObject.Find ("ItemHolder/" + name);
+					var gO = reactionActiavateables.Find (r => r.name == name);
 
 					if (gO == null)
 					{
@@ -177,6 +179,21 @@ public class PlayerController : MonoBehaviour {
 					}
 
 					gO.SetActive (false);
+				}
+			}
+
+			if (queuedReactions [0].objectsToEnable.Count > 0) 
+			{
+				foreach (string name in queuedReactions[0].objectsToEnable) 
+				{
+					var gO = reactionActiavateables.Find (r => r.name == name);
+
+					if (gO == null)
+					{
+						continue;
+					}
+
+					gO.SetActive (true);
 				}
 			}
 
@@ -461,10 +478,14 @@ public class PlayerController : MonoBehaviour {
 			return false;
 		}
 
-		acceptInput = false;
-
-
 		ReactionCollection reactionCollection = interactable.Interact (gameState);
+
+		if (reactionCollection.reactions.Count == 0) 
+		{
+			return false;
+		}
+
+		acceptInput = false;
 
 		queuedReactions.Clear (); 
 
