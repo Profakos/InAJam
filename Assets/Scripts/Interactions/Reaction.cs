@@ -15,6 +15,8 @@ public class Reaction
 
 	public bool flipImage;
 
+	public Sprite sprite;
+
 	public List<string> options = new List<string>();
  
 	public List<string> objectsToRemove = new List<string>();

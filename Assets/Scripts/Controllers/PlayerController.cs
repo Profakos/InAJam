@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour {
 	public GameObject talkBox;
 	private GameObject nameBox;
 	private GameObject choiceBox;
+	private GameObject imageBox;
 
 	private UnityEngine.UI.Text talkBoxText;
 	private UnityEngine.UI.Text nameBoxText;
 	private UnityEngine.UI.Text choiceBoxText;
+
+	private UnityEngine.UI.Image talkImage;
 
 	private bool fireNextLine = true;
 	private bool lineCompleted = false;
@@ -52,6 +55,14 @@ public class PlayerController : MonoBehaviour {
 		if (talkBox == null)
 		{
 			return;
+		}
+
+		var textImageTransform = talkBox.transform.Find("TextImage");
+
+		if (textImageTransform != null)
+		{		
+			imageBox = textImageTransform.gameObject;
+			talkImage = textImageTransform.GetComponent<Image> ();
 		}
 
 		var talkBoxTextTransform = talkBox.transform.Find("TalkBoxText");
@@ -142,6 +153,16 @@ public class PlayerController : MonoBehaviour {
 			} else
 			{
 				nameBox.SetActive (false);
+			}
+
+			if (queuedReactions [0].sprite != null)
+			{
+				imageBox.SetActive (true);
+				talkImage.sprite = queuedReactions [0].sprite;
+			} 
+			else
+			{
+				imageBox.SetActive (false);
 			}
 
 			if (queuedReactions [0].objectsToRemove.Count > 0) 
@@ -458,6 +479,8 @@ public class PlayerController : MonoBehaviour {
 	public IEnumerator CloseDialog()
 	{
 		nameBox.SetActive (false);
+		choiceBox.SetActive (false);
+		imageBox.SetActive (false);
 
 		while (talkBox.transform.localScale.x > 0)
 		{
