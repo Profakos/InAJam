@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour {
 	private GameObject choiceBox;
 	private GameObject imageBox;
 
+	public Inventory inventory;
+
 	private UnityEngine.UI.Text talkBoxText;
 	private UnityEngine.UI.Text nameBoxText;
 	private UnityEngine.UI.Text choiceBoxText;
@@ -97,6 +99,12 @@ public class PlayerController : MonoBehaviour {
 			choiceBoxText = choiceBoxTextTransform.GetComponent<Text> ();
 		}
 
+		var inventoryComponent = transform.GetComponent<Inventory> ();
+
+		if (inventoryComponent != null) 
+		{
+			inventory = inventoryComponent;
+		}
 	}
 
 	void Start()
@@ -209,6 +217,22 @@ public class PlayerController : MonoBehaviour {
 						gameState.Add (gS.name, gS.value);
 					}
 				}			
+			}
+
+			if (queuedReactions [0].addItem.Count != 0) 
+			{
+				foreach (var item in queuedReactions[0].addItem) 
+				{
+					inventory.AddItem (item);
+				}
+			}
+
+			if (queuedReactions [0].removeItem.Count != 0) 
+			{
+				foreach (var item in queuedReactions[0].removeItem) 
+				{
+					inventory.RemoveItem (item);
+				}
 			}
 
 			return;

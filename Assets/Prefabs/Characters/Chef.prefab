@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 50928879363960536}
   - component: {fileID: 61945192697645476}
   - component: {fileID: 114117530277357324}
+  - component: {fileID: 114915165028449500}
   m_Layer: 0
   m_Name: Chef
   m_TagString: Character
@@ -188,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   talkBox: {fileID: 0}
+  inventory: {fileID: 0}
   reactionActiavateables:
   - {fileID: 0}
   - {fileID: 0}
@@ -366,6 +368,31 @@ MonoBehaviour:
   spriteNorth: {fileID: 21300000, guid: 80909f7636864f446b59a3447a246dcf, type: 3}
   spriteSouth: {fileID: 21300000, guid: 904bb7b4826bff64cba1dca6dfbb4d63, type: 3}
   spriteRenderer: {fileID: 0}
+--- !u!114 &114915165028449500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768925194488270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6746a7c26c8ccc4195182ecb44900d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  items:
+  - sprite: {fileID: 0}
+    name: 
+  - sprite: {fileID: 0}
+    name: 
+  - sprite: {fileID: 0}
+    name: 
+  - sprite: {fileID: 0}
+    name: 
 --- !u!124 &124311195861239106
 Behaviour:
   m_ObjectHideFlags: 1

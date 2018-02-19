@@ -25,5 +25,9 @@ public class Reaction
 
 	public List<Condition> setGameState = new List<Condition>(); 
 
+	public List<Item> addItem = new List<Item>();
+
+	public List<string> removeItem = new List<string>();
+
 
 }

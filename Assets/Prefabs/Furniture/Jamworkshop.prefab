@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4234569829521060}
   - component: {fileID: 212526114097536912}
   - component: {fileID: 114259225102156598}
-  - component: {fileID: 114495884319043730}
   - component: {fileID: 60905389906416596}
   m_Layer: 8
   m_Name: Jamworkshop
@@ -58,7 +57,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.5}
+    pivot: {x: 0.5, y: -0.3}
     oldSize: {x: 6, y: 3}
     newSize: {x: 4, y: 2}
     adaptiveTilingThreshold: 0.5
@@ -195,31 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
---- !u!114 &114495884319043730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1460492550328756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conditionalReactions: []
-  defaultReaction:
-    reactionCollectionName: 
-    condition:
-      name: 
-      value: 
-    reactions:
-    - displayName: 
-      text: "The instruments for a symphony of jam and baked good\u2026 "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      objectsToRemove: []
-      setGameState: []
 --- !u!212 &212526114097536912
 SpriteRenderer:
   m_ObjectHideFlags: 1
