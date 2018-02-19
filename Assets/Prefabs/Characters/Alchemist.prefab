@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conditionalReactions:
-  - reactionCollectionName: 
+  - reactionCollectionName: Waiting for order
     conditionList:
     - name: HALFRED
       value: 1
@@ -118,12 +118,13 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
-  defaultReaction:
-    reactionCollectionName: 
-    conditionList: []
+  - reactionCollectionName: Order is being received
+    conditionList:
+    - name: HALFRED
+      value: 2
     reactions:
     - displayName: Grylla
-      text: "\u201CGreetings! What can I get for you?\u201D "
+      text: '"Here you go! Fresh coffee!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -135,7 +136,141 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Halfred
-      text: "\u201CHello there. To tell the truth, I am not particularly hungry.\u201D "
+      text: '"Thank you, Grylla. Oh, I have noticed the painting on the wall. Was
+        it created by you?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem:
+      - Coffee
+    - displayName: Grylla
+      text: '"Well, err, yes."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Halfred
+      text: '"Fascinating. A fantastic job. Was the paint home made too?" '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"Yes, indeed."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Halfred
+      text: '"Ah. Do a lot of Hive Bugs create paint?" '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"Only Growers, and they mostly create chemicals. ANYWAYS, I am glad you
+        like it."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Halfred
+      text: "\"It is standard CFE OFE, but I can tell it was \u2018well played\u2019.\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: 
+      text: You feel prouder!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: HALFRED
+        value: 3
+      addItem: []
+      removeItem: []
+  - reactionCollectionName: Received order
+    conditionList:
+    - name: HALFRED
+      value: 3
+    reactions:
+    - displayName: Halfred
+      text: '"Cheers."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+  defaultReaction:
+    reactionCollectionName: 
+    conditionList: []
+    reactions:
+    - displayName: Grylla
+      text: '"Greetings! What can I get for you?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Halfred
+      text: '"Hello there. To tell the truth, I am not particularly hungry." '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -213,8 +348,8 @@ MonoBehaviour:
         name: Cookie
       removeItem: []
     - displayName: Halfred
-      text: "\u201CRest assured, I will be hungry later today, and visit you again.
-        I just wanted to greet the new co-worker as soon as possible.\u201D "
+      text: '"Rest assured, I will be hungry later today, and visit you again. I just
+        wanted to greet the new co-worker as soon as possible." '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -226,7 +361,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Grylla
-      text: "\u201CAh, alright, Mister\u2026\u201D"
+      text: "\"Ah, alright, Mister\u2026\""
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -238,7 +373,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Halfred
-      text: "\u201CJust call me Halfred.\u201D"
+      text: '"Just call me Halfred."'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -262,7 +397,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Halfred
-      text: "\u201CMy parents are of the humorous inclination.\u201D "
+      text: '"My parents are of the humorous inclination." '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -274,7 +409,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Grylla
-      text: "\u201CAh, I see. And what do you work here as, Halfred?\u201D "
+      text: '"Ah, I see. And what do you work here as, Halfred?"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -286,8 +421,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Halfred
-      text: "\u201CI am a nanoalchemisttechnician. It is a form of sufficiently advanced
-        science.\u201D "
+      text: '"I am a nanoalchemisttechnician. It is a form of sufficiently advanced
+        science."'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -299,7 +434,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Grylla
-      text: "\u201CAh, I see. Sounds complicated!\u201D "
+      text: '"Ah, I see. Sounds complicated!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -311,8 +446,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Halfred
-      text: "\u201CYes. Say, I have worked up quite a thirst from discussing, could
-        you please bring me a cup of coffee?\u201D "
+      text: '"Yes. Say, I have worked up quite a thirst from discussing, could you
+        please bring me a cup of coffee?" '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -324,7 +459,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
     - displayName: Grylla
-      text: "\u201CSure thing!\u201D"
+      text: '"Sure thing!"'
       portrait: 
       imageLocation: 0
       flipImage: 0

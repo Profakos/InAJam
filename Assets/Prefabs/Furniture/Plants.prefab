@@ -100,7 +100,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Ritual
+    conditionList:
+    - name: NSMITH
+      value: 2
+    reactions:
+    - displayName: 
+      text: You vaguely wave the marmalade croissant in the direction of the plants.
+        You have no better idea.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: NSMITH
+        value: 3
+      addItem: []
+      removeItem: []
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -112,8 +132,11 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
 --- !u!114 &114458846385242744
 MonoBehaviour:
   m_ObjectHideFlags: 1

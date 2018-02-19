@@ -113,13 +113,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conditionalReactions:
-  - reactionCollectionName: 
+  - reactionCollectionName: Chlorine has ordered
     conditionList:
     - name: CHLORINE
       value: 1
     reactions:
     - displayName: Chlorine
-      text: "\u201CStrawberry Jam and Toast please!\u201D "
+      text: '"Strawberry Jam and Toast please!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -128,12 +128,208 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+  - reactionCollectionName: Chlorine gets order
+    conditionList:
+    - name: CHLORINE
+      value: 2
+    reactions:
+    - displayName: Grylla
+      text: '"Here you go!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Chlorine
+      text: '"Thank you so much!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: "\"Soo\u2026 can I ask what kind of plants do you grow?\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem:
+      - Jamtoast
+    - displayName: Chlorine
+      text: '"Ah, I mostly grow dangerous fruit."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"What, poisonous?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Chlorine
+      text: "\"No\u2026 Dangerous Fruit.\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"Never heard of any other kind of dangerous fruit, I am sorry."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Chlorine
+      text: '"Well, all I am gonna say, it is Dangerous, and not necessarily fruit." '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"I am not sure if I understand." '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Chlorine
+      text: '"Its okay! Anyway, and you? What kind of plants do you grow?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"Oh, I grow berries for the jams!" '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Chlorine
+      text: "\"Ah, probably this is why they taste so good! They are made with\u2026
+        love.\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"Aw, thank you!" '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: 
+      text: You feel prouder!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: CHLORINE
+        value: 3
+      addItem: []
+      removeItem: []
+  - reactionCollectionName: Chlorine post order
+    conditionList:
+    - name: CHLORINE
+      value: 3
+    reactions:
+    - displayName: Chlorine
+      text: '*chomp chomp*'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
     reactions:
     - displayName: Grylla
-      text: "\u201CGreetings! What can I get for you?\u201D "
+      text: '"Greetings! What can I get for you?" '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -142,8 +338,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Chlorine
-      text: "\u201CWell, well, well, a friendly new face! Hello, uh, Grylla was it?\u201D "
+      text: '"Well, well, well, a friendly new face! Hello, uh, Grylla was it?"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -152,8 +350,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
-      text: "\u201COh, er, hello, yes! And who are you?\u201D "
+      text: '"Oh, er, hello, yes! And who are you?"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -162,8 +362,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Chlorine
-      text: "\u201CChlorine Chlorine but you can call me Chlorine. I am a Botanist!\u201D "
+      text: '"Chlorine Chlorine but you can call me Chlorine. I am a Botanist!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -172,8 +374,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
-      text: "\u201CA botanist? Are you also working at catering?\u201D "
+      text: '"A botanist? Are you also working at catering?"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -182,8 +386,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Chlorine
-      text: " \u201CNah, I run strange energy tests on plants and seeds.\u201D"
+      text: '"Nah, I run strange energy tests on plants and seeds."'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -192,9 +398,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
-      text: "\u201COh! I see. I don\u2019t know much about botany, but I have cared
-        for plants myself!\u201C "
+      text: "\"Oh! I see. I don\u2019t know much about botany, but I have cared for
+        plants myself!\""
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -203,8 +411,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Chlorine
-      text: "\u201CNice nice! Always love to meet a fellow enthusiast!\u201D "
+      text: '"Nice nice! Always love to meet a fellow enthusiast!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -213,8 +423,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
-      text: " \u201CAhem, anyways, what can I get for you?\u201D "
+      text: '"Ahem, anyways, what can I get for you?"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -223,8 +435,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Chlorine
-      text: "\u201CLets see the menu\u2026 Strawberry Jam and Toast, please!\u201D "
+      text: "\"Lets see the menu\u2026 Strawberry Jam and Toast, please!\""
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -233,8 +447,10 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
-      text: "\u201CRight, right!\u201D "
+      text: '"Right, right!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -245,6 +461,8 @@ MonoBehaviour:
       setGameState:
       - name: CHLORINE
         value: 1
+      addItem: []
+      removeItem: []
 --- !u!212 &212419681145418910
 SpriteRenderer:
   m_ObjectHideFlags: 1

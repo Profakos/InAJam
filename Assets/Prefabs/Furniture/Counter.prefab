@@ -112,20 +112,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Has both orders
+    conditionList:
+    - name: CHLORINE
+      value: 1
+    - name: NSMITH
+      value: 1
+    reactions:
+    - displayName: 
+      text: Crafted the ordered items!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: CHLORINE
+        value: 2
+      - name: NSMITH
+        value: 2
+      addItem:
+      - sprite: {fileID: 21300000, guid: 9d2acc41b46244c4da4ba65336f2390f, type: 3}
+        name: Jamtoast
+      - sprite: {fileID: 21300000, guid: 77e16ffca665cae469f6345d6ca074bb, type: 3}
+        name: MarmelCrois
+      removeItem: []
+  - reactionCollectionName: Jam was ordered
+    conditionList:
+    - name: CHLORINE
+      value: 1
+    reactions:
+    - displayName: 
+      text: Crafted a jam toast!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: CHLORINE
+        value: 2
+      addItem:
+      - sprite: {fileID: 21300000, guid: 9d2acc41b46244c4da4ba65336f2390f, type: 3}
+        name: Jamtoast
+      removeItem: []
+  - reactionCollectionName: Marmelade was ordered
+    conditionList:
+    - name: NSMITH
+      value: 1
+    reactions:
+    - displayName: 
+      text: Crafted a marmelade croissant!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: NSMITH
+        value: 2
+      addItem:
+      - sprite: {fileID: 21300000, guid: 77e16ffca665cae469f6345d6ca074bb, type: 3}
+        name: MarmelCrois
+      removeItem: []
   defaultReaction:
     reactionCollectionName: 
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: 
       text: "The instruments for a symphony of jam and baked goods\u2026 "
       portrait: 
       imageLocation: 0
       flipImage: 0
-      objectsToRemove: []
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
 --- !u!212 &212176588203075028
 SpriteRenderer:
   m_ObjectHideFlags: 1

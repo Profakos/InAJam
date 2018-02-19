@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conditionalReactions:
-  - reactionCollectionName: 
+  - reactionCollectionName: Waiting for order
     conditionList:
     - name: NSMITH
       value: 1
@@ -116,6 +116,123 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+  - reactionCollectionName: No ritual!
+    conditionList:
+    - name: NSMITH
+      value: 2
+    reactions:
+    - displayName: "N\u2019smithothep"
+      text: "\u201CTHE OFFERING IS PALATABLE, BUT THE RITUAL IS STILL REQUIRED!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"???"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+  - reactionCollectionName: Ritual done
+    conditionList:
+    - name: NSMITH
+      value: 3
+    reactions:
+    - displayName: "N\u2019smithothep"
+      text: '"THE RITUAL IS COMPLETE! THE OFFERING WAS FOUND SUITABLE!"  '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: "\"I still don\u2019t understand but\u2026 I am glad you like it?\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem:
+      - MarmelCrois
+    - displayName: "N\u2019smithothep"
+      text: "\"YOU HAVE GAINED THE FAVOUR OF N\u2019SMITHOTHEP! EVERYONE WILL HEAR
+        ABOUT YOUR GOOD DEED!\" "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: Grylla
+      text: '"T-thank you?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: 
+      text: You feel prouder! And terrified!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: NSMITH
+        value: 4
+      addItem: []
+      removeItem: []
+  - reactionCollectionName: Order received
+    conditionList:
+    - name: NSMITH
+      value: 4
+    reactions:
+    - displayName: 
+      text: He seems to be licking it?
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -130,6 +247,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201CE-excuse me?\u201D "
       portrait: 
@@ -140,6 +259,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: "\u201CI MEAN I HOPE YOU ARE HAVING A NICE THEY IN THIS FACILITY, ESPECIALLY
         NOW THAT I, N\u2019SMITHOTHEP, RESIDE IN YOUR PRESENCE.\u201D "
@@ -151,6 +272,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201CErr, I hope you too?\u201D "
       portrait: 
@@ -161,6 +284,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: "\u201CTHE GREETING HAS BEEN DONE, THE DEAL IS SEALED.\u201D "
       portrait: 
@@ -171,6 +296,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201CW-w-what deal?\u201D "
       portrait: 
@@ -181,6 +308,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: "\u201CTHE DEAL...OF FRIENDSHIP.\u201D "
       portrait: 
@@ -191,6 +320,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201CGolly, er, what do you do around here, f-f-friend?\u201D "
       portrait: 
@@ -201,6 +332,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: "\u201CI VENTURE WHERE OTHERS DO NOT DARE. I CHECK RADIATION FIELDS.\u201D "
       portrait: 
@@ -211,6 +344,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201CAh, sounds dangerous.\u201D "
       portrait: 
@@ -221,6 +356,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: "\u201CDO NOT FEAR FOR ME, FOR I CAN NOT BE HARMED IN THIS PLANE, BUT
         N\u2019SMITHOTHEP APPRECIATES YOUR WORRY. MAY I, PLACE A REQUEST?\u201C"
@@ -232,6 +369,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201CY-y-es, what do you wish to have?\u201D "
       portrait: 
@@ -242,6 +381,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: '"AN OFFERING OF MARMALADE CROISSANT  MUST BE MADE AND THE RITUAL OF PLANTS
         MUST BE PERFORMED ON IT."'
@@ -253,6 +394,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: Grylla
       text: "\u201C???\u201D "
       portrait: 
@@ -263,6 +406,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: "N\u2019smithothep"
       text: "\u201CPRETTY PLEASE.\u201D "
       portrait: 
@@ -275,6 +420,8 @@ MonoBehaviour:
       setGameState:
       - name: NSMITH
         value: 1
+      addItem: []
+      removeItem: []
 --- !u!114 &114872258078474632
 MonoBehaviour:
   m_ObjectHideFlags: 1

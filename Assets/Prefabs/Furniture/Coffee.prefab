@@ -91,7 +91,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Coffee was ordered
+    conditionList:
+    - name: HALFRED
+      value: 1
+    reactions:
+    - displayName: 
+      text: <minigame is not done yet, so this coffee is free>
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: HALFRED
+        value: 2
+      addItem:
+      - sprite: {fileID: 21300000, guid: e4ced1e5309723f469a6dc693c1272fb, type: 3}
+        name: Coffee
+      removeItem: []
   defaultReaction:
     reactionCollectionName: Examine Portrait
     conditionList: []
@@ -103,8 +124,11 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: 
       text: 'It is a strange combination of an arcade machine and a coffee dispenser. '
       portrait: 
@@ -112,8 +136,11 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
     - displayName: 
       text: This was not what you meant when you ordered an exciting coffee machine.
       portrait: 
@@ -121,8 +148,11 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
 --- !u!212 &212945395642049940
 SpriteRenderer:
   m_ObjectHideFlags: 1
