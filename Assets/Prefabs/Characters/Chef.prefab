@@ -188,6 +188,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   talkBox: {fileID: 0}
+  reactionActiavateables:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cutscenesCollection:
   - reactionCollectionName: START
     conditionList: []
@@ -200,7 +204,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Loudspeaker
       text: '"We extend a hearty welcome to Grylla #113, to HECKWALKERS INC, strange
@@ -210,7 +215,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Grylla
       text: '"That is me!" '
@@ -219,7 +225,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Loudspeaker
       text: '"She will soon finish the opening ceremony. Please be nice to her. We
@@ -229,7 +236,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Grylla
       text: "\"Incident\u2026? Er... No, can't think of that right now.\" "
@@ -238,7 +246,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Grylla
       text: '"I must focus to make the Queen proud... To fulfill my destiny..."'
@@ -247,7 +256,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: 
       text: Behind you, the painting of the Queen gives a silent thumbs up.
@@ -256,7 +266,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
   - reactionCollectionName: Don't the don't
     conditionList: []
@@ -268,7 +279,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
   - reactionCollectionName: Gong the gong
     conditionList: []
@@ -280,7 +292,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: 
       text: GOOOONNNNGGG
@@ -289,7 +302,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 21300000, guid: f23a0d84253d4ec42a855f2ff714236b, type: 3}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: ???
       text: " \u201COi, you heard that?\u201D "
@@ -298,7 +312,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 21300000, guid: ad7a298c6579d8b4cba78225dcaa4599, type: 3}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Chlorine
       text: '"They are open! Hullo!!!!"'
@@ -307,7 +322,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 21300000, guid: f4de1fe05b3ddad419d4ad7f39b14ca5, type: 3}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: "N\u2019smithothep"
       text: "\u201CTHE GATE HAS OPENED BEFORE ME, AND I ARRIVE. HI.\u201D "
@@ -316,7 +332,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 21300000, guid: ed48f9767bdfaf445a28e83502214acd, type: 3}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Halfred
       text: "\u201CThankfully no fireworks this time. Hmph. Good day.\u201D"
@@ -325,7 +342,8 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 21300000, guid: b696be5ebe751e647877f5bc72162e96, type: 3}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
     - displayName: Grylla
       text: "\u201CGasp! New friends!\u201D"
@@ -334,7 +352,11 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 21300000, guid: 3f2a272cbb1db564896345287a009b89, type: 3}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable:
+      - Alchemist
+      - Gardener
+      - Eldritch
       setGameState:
       - name: GONGED
         value: 1

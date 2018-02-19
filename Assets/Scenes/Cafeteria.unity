@@ -423,16 +423,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: reactionActiavateables.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[6].objectsToEnable.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4587707318572108, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.21
@@ -470,21 +460,6 @@ Prefab:
       propertyPath: talkBox
       value: 
       objectReference: {fileID: 12755715}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[6].objectsToEnable.Array.data[0]
-      value: Alchemist
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[6].objectsToEnable.Array.data[1]
-      value: Gardener
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[6].objectsToEnable.Array.data[2]
-      value: Eldritch
-      objectReference: {fileID: 0}
     - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
         type: 2}
       propertyPath: reactionActiavateables.Array.data[0]
@@ -897,11 +872,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4662922042736390, guid: c86bc59215b38664a91c321436e05a61, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.540797
+      value: -10.52
       objectReference: {fileID: 0}
     - target: {fileID: 4662922042736390, guid: c86bc59215b38664a91c321436e05a61, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.8331823
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: 4662922042736390, guid: c86bc59215b38664a91c321436e05a61, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1214,6 +1189,10 @@ Prefab:
     - target: {fileID: 1681900548164964, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681900548164964, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
+      propertyPath: m_Name
+      value: Gardener
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}

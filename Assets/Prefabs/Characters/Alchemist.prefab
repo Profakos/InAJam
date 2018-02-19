@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1171625976960682}
+  m_RootGameObject: {fileID: 1343341900696904}
   m_IsPrefabParent: 1
---- !u!1 &1171625976960682
+--- !u!1 &1343341900696904
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4662922042736390}
-  - component: {fileID: 212129288026986648}
-  - component: {fileID: 50078362021774210}
-  - component: {fileID: 61171875520158050}
-  - component: {fileID: 114872258078474632}
-  - component: {fileID: 114403610672276016}
+  - component: {fileID: 4864672967872256}
+  - component: {fileID: 212608392914282476}
+  - component: {fileID: 50957161200654660}
+  - component: {fileID: 61190182328599000}
+  - component: {fileID: 114957314539803410}
+  - component: {fileID: 114186923698820540}
   m_Layer: 8
-  m_Name: Eldritch
+  m_Name: Alchemist
   m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4662922042736390
+--- !u!4 &4864672967872256
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171625976960682}
+  m_GameObject: {fileID: 1343341900696904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7, y: -3.45, z: 0}
+  m_LocalPosition: {x: 4.06, y: -1.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50078362021774210
+--- !u!50 &50957161200654660
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171625976960682}
+  m_GameObject: {fileID: 1343341900696904}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -64,12 +64,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61171875520158050
+--- !u!61 &61190182328599000
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171625976960682}
+  m_GameObject: {fileID: 1343341900696904}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -89,12 +89,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &114403610672276016
+--- !u!114 &114186923698820540
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171625976960682}
+  m_GameObject: {fileID: 1343341900696904}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
@@ -103,11 +103,11 @@ MonoBehaviour:
   conditionalReactions:
   - reactionCollectionName: 
     conditionList:
-    - name: NSMITH
+    - name: HALFRED
       value: 1
     reactions:
-    - displayName: "N\u2019smithothep"
-      text: "\u201CA MARMALADE CROISSANT WITH THE RITUAL OF PLANTS, IS MY MANDATE.\u201D "
+    - displayName: Halfred
+      text: '"I would like to have a cup of coffee, please."'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -120,8 +120,18 @@ MonoBehaviour:
     reactionCollectionName: 
     conditionList: []
     reactions:
-    - displayName: "N\u2019smithothep"
-      text: "\u201CHEAR MY WORDS, MORTAL.\u201D "
+    - displayName: Grylla
+      text: "\u201CGreetings! What can I get for you?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Halfred
+      text: "\u201CHello there. To tell the truth, I am not particularly hungry.\u201D "
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -131,7 +141,7 @@ MonoBehaviour:
       objectsToEnable: []
       setGameState: []
     - displayName: Grylla
-      text: "\u201CE-excuse me?\u201D "
+      text: "\u201COh.\u201D"
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -140,9 +150,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: "\u201CI MEAN I HOPE YOU ARE HAVING A NICE THEY IN THIS FACILITY, ESPECIALLY
-        NOW THAT I, N\u2019SMITHOTHEP, RESIDE IN YOUR PRESENCE.\u201D "
+    - displayName: Halfred
+      text: "\u201CHowever, I have known about your arrival in advance, therefore,
+        I have imagined that a gift should be created.\u201D "
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -151,18 +161,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
-    - displayName: Grylla
-      text: "\u201CErr, I hope you too?\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: "\u201CTHE GREETING HAS BEEN DONE, THE DEAL IS SEALED.\u201D "
+    - displayName: Halfred
+      text: " \u201CI have baked you these cookies for you, following the instructions
+        in a completely meticulous manner.\u201C "
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -172,7 +173,7 @@ MonoBehaviour:
       objectsToEnable: []
       setGameState: []
     - displayName: Grylla
-      text: "\u201CW-w-what deal?\u201D "
+      text: "\u201CAw, thank you...\u201D"
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -181,90 +182,8 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: "\u201CTHE DEAL...OF FRIENDSHIP.\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: Grylla
-      text: "\u201CGolly, er, what do you do around here, f-f-friend?\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: "\u201CI VENTURE WHERE OTHERS DO NOT DARE. I CHECK RADIATION FIELDS.\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: Grylla
-      text: "\u201CAh, sounds dangerous.\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: "\u201CDO NOT FEAR FOR ME, FOR I CAN NOT BE HARMED IN THIS PLANE, BUT
-        N\u2019SMITHOTHEP APPRECIATES YOUR WORRY. MAY I, PLACE A REQUEST?\u201C"
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: Grylla
-      text: "\u201CY-y-es, what do you wish to have?\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: '"AN OFFERING OF MARMALADE CROISSANT  MUST BE MADE AND THE RITUAL OF PLANTS
-        MUST BE PERFORMED ON IT."'
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: Grylla
-      text: "\u201C???\u201D "
-      portrait: 
-      imageLocation: 0
-      flipImage: 0
-      sprite: {fileID: 0}
-      options: []
-      objectsToDisable: []
-      objectsToEnable: []
-      setGameState: []
-    - displayName: "N\u2019smithothep"
-      text: "\u201CPRETTY PLEASE.\u201D "
+    - displayName: 
+      text: Gained coconut flake cookie!
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -273,26 +192,131 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState:
-      - name: NSMITH
+      - name: COOKIE
         value: 1
---- !u!114 &114872258078474632
+    - displayName: Halfred
+      text: "\u201CRest assured, I will be hungry later today, and visit you again.
+        I just wanted to greet the new co-worker as soon as possible.\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CAh, alright, Mister\u2026\u201D"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Halfred
+      text: "\u201CJust call me Halfred.\u201D"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: '"Halfred?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Halfred
+      text: "\u201CMy parents are of the humorous inclination.\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CAh, I see. And what do you work here as, Halfred?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Halfred
+      text: "\u201CI am a nanoalchemisttechnician. It is a form of sufficiently advanced
+        science.\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CAh, I see. Sounds complicated!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Halfred
+      text: "\u201CYes. Say, I have worked up quite a thirst from discussing, could
+        you please bring me a cup of coffee?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CSure thing!\u201D"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: HALFRED
+        value: 1
+--- !u!114 &114957314539803410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171625976960682}
+  m_GameObject: {fileID: 1343341900696904}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd0a110f596d86949b87d9c24bdd9911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
---- !u!212 &212129288026986648
+--- !u!212 &212608392914282476
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171625976960682}
+  m_GameObject: {fileID: 1343341900696904}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -321,7 +345,7 @@ SpriteRenderer:
   m_SortingLayerID: -334629579
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10a1ce067e73793479618482c7e8d583, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea87ed457145e63449f4c9f813ae16a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

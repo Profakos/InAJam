@@ -112,12 +112,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: 
+    conditionList:
+    - name: CHLORINE
+      value: 1
+    reactions:
+    - displayName: Chlorine
+      text: "\u201CStrawberry Jam and Toast please!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
   defaultReaction:
-    condition:
-      name: 
-      value: 
-    reactions: []
+    reactionCollectionName: 
+    conditionList: []
+    reactions:
+    - displayName: Grylla
+      text: "\u201CGreetings! What can I get for you?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Chlorine
+      text: "\u201CWell, well, well, a friendly new face! Hello, uh, Grylla was it?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201COh, er, hello, yes! And who are you?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Chlorine
+      text: "\u201CChlorine Chlorine but you can call me Chlorine. I am a Botanist!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CA botanist? Are you also working at catering?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Chlorine
+      text: " \u201CNah, I run strange energy tests on plants and seeds.\u201D"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201COh! I see. I don\u2019t know much about botany, but I have cared
+        for plants myself!\u201C "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Chlorine
+      text: "\u201CNice nice! Always love to meet a fellow enthusiast!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: " \u201CAhem, anyways, what can I get for you?\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Chlorine
+      text: "\u201CLets see the menu\u2026 Strawberry Jam and Toast, please!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+    - displayName: Grylla
+      text: "\u201CRight, right!\u201D "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: CHLORINE
+        value: 1
 --- !u!212 &212419681145418910
 SpriteRenderer:
   m_ObjectHideFlags: 1
