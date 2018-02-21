@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1681900548164964}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7132285, y: 0.531142, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.513838, y: 4.987334, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -130,6 +130,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
   - reactionCollectionName: Chlorine gets order
     conditionList:
     - name: CHLORINE
@@ -147,6 +148,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Thank you so much!"'
       portrait: 
@@ -159,6 +161,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: "\"Soo\u2026 can I ask what kind of plants do you grow?\""
       portrait: 
@@ -172,6 +175,7 @@ MonoBehaviour:
       addItem: []
       removeItem:
       - Jamtoast
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Ah, I mostly grow dangerous fruit."'
       portrait: 
@@ -184,6 +188,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"What, poisonous?"'
       portrait: 
@@ -196,6 +201,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: "\"No\u2026 Dangerous Fruit.\""
       portrait: 
@@ -208,6 +214,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Never heard of any other kind of dangerous fruit, I am sorry."'
       portrait: 
@@ -220,6 +227,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Well, all I am gonna say, it is Dangerous, and not necessarily fruit." '
       portrait: 
@@ -232,6 +240,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"I am not sure if I understand." '
       portrait: 
@@ -244,6 +253,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Its okay! Anyway, and you? What kind of plants do you grow?"'
       portrait: 
@@ -256,6 +266,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Oh, I grow berries for the jams!" '
       portrait: 
@@ -268,6 +279,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: "\"Ah, probably this is why they taste so good! They are made with\u2026
         love.\""
@@ -281,6 +293,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Aw, thank you!" '
       portrait: 
@@ -293,6 +306,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: 
       text: You feel prouder!
       portrait: 
@@ -307,6 +321,7 @@ MonoBehaviour:
         value: 3
       addItem: []
       removeItem: []
+      tryRunCutscene: ALARM
   - reactionCollectionName: Chlorine post order
     conditionList:
     - name: CHLORINE
@@ -324,6 +339,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -340,6 +356,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Well, well, well, a friendly new face! Hello, uh, Grylla was it?"'
       portrait: 
@@ -352,6 +369,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Oh, er, hello, yes! And who are you?"'
       portrait: 
@@ -364,6 +382,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Chlorine Chlorine but you can call me Chlorine. I am a Botanist!"'
       portrait: 
@@ -376,6 +395,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"A botanist? Are you also working at catering?"'
       portrait: 
@@ -388,6 +408,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Nah, I run strange energy tests on plants and seeds."'
       portrait: 
@@ -400,6 +421,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: "\"Oh! I see. I don\u2019t know much about botany, but I have cared for
         plants myself!\""
@@ -413,6 +435,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"Nice nice! Always love to meet a fellow enthusiast!"'
       portrait: 
@@ -425,6 +448,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Ahem, anyways, what can I get for you?"'
       portrait: 
@@ -437,6 +461,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: "\"Lets see the menu\u2026 Strawberry Jam and Toast, please!\""
       portrait: 
@@ -449,6 +474,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Right, right!"'
       portrait: 
@@ -463,6 +489,7 @@ MonoBehaviour:
         value: 1
       addItem: []
       removeItem: []
+      tryRunCutscene: 
 --- !u!212 &212419681145418910
 SpriteRenderer:
   m_ObjectHideFlags: 1

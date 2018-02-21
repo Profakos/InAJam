@@ -115,17 +115,32 @@ MonoBehaviour:
   conditionalReactions: []
   defaultReaction:
     reactionCollectionName: 
-    condition:
-      name: 
-      value: 
+    conditionList: []
     reactions:
     - displayName: 
       text: A fridge slash display case.
       portrait: 
       imageLocation: 0
       flipImage: 0
-      objectsToRemove: []
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+    - displayName: 
+      text: It houses a lone banana, which you have found on the corridor.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
 --- !u!212 &212842497999325104
 SpriteRenderer:
   m_ObjectHideFlags: 1

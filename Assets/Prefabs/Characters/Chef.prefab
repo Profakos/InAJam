@@ -190,10 +190,11 @@ MonoBehaviour:
   speed: 5
   talkBox: {fileID: 0}
   inventory: {fileID: 0}
-  reactionActiavateables:
+  reactionTargets:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 1768925194488270}
   cutscenesCollection:
   - reactionCollectionName: START
     conditionList: []
@@ -209,6 +210,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Loudspeaker
       text: '"We extend a hearty welcome to Grylla #113, to HECKWALKERS INC, strange
         energy research facility."'
@@ -220,6 +224,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"That is me!" '
       portrait: 
@@ -230,6 +237,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Loudspeaker
       text: '"She will soon finish the opening ceremony. Please be nice to her. We
         don''t want a repeat of the CHEFINATOR-3000 incident."'
@@ -241,6 +251,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: "\"Incident\u2026? Er... No, can't think of that right now.\" "
       portrait: 
@@ -251,6 +264,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"I must focus to make the Queen proud... To fulfill my destiny..."'
       portrait: 
@@ -261,6 +277,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: 
       text: Behind you, the painting of the Queen gives a silent thumbs up.
       portrait: 
@@ -271,6 +290,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
   - reactionCollectionName: Don't the don't
     conditionList: []
     reactions:
@@ -284,6 +306,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
   - reactionCollectionName: Gong the gong
     conditionList: []
     reactions:
@@ -297,6 +322,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: 
       text: GOOOONNNNGGG
       portrait: 
@@ -307,8 +335,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: ???
-      text: " \u201COi, you heard that?\u201D "
+      text: '"Oi, you heard that?" '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -317,6 +348,9 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Chlorine
       text: '"They are open! Hullo!!!!"'
       portrait: 
@@ -327,8 +361,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: "N\u2019smithothep"
-      text: "\u201CTHE GATE HAS OPENED BEFORE ME, AND I ARRIVE. HI.\u201D "
+      text: '"THE GATE HAS OPENED BEFORE ME, AND I ARRIVE. HI."'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -337,8 +374,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
-      text: "\u201CThankfully no fireworks this time. Hmph. Good day.\u201D"
+      text: '"Thankfully no fireworks this time. Hmph. Good day."'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -347,8 +387,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
-      text: "\u201CGasp! New friends!\u201D"
+      text: '"Gasp! New friends!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -362,6 +405,31 @@ MonoBehaviour:
       setGameState:
       - name: GONGED
         value: 1
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+  - reactionCollectionName: ALARM
+    conditionList:
+    - name: CHLORINE
+      value: 3
+    - name: NSMITH
+      value: 4
+    - name: HALFRED
+      value: 3
+    reactions:
+    - displayName: Loudspeaker
+      text: Attention all employees!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
   facing: 3
   spriteWest: {fileID: 21300000, guid: 8289f2032fd455b4ba2b92393d535e47, type: 3}
   spriteEast: {fileID: 21300000, guid: d5ae8a2fdb036f4479ecf7958f8abe96, type: 3}

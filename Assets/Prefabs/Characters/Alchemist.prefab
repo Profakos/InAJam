@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343341900696904}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.06, y: -1.96, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -118,6 +118,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
   - reactionCollectionName: Order is being received
     conditionList:
     - name: HALFRED
@@ -135,6 +136,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Thank you, Grylla. Oh, I have noticed the painting on the wall. Was
         it created by you?"'
@@ -149,6 +151,7 @@ MonoBehaviour:
       addItem: []
       removeItem:
       - Coffee
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Well, err, yes."'
       portrait: 
@@ -161,6 +164,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Fascinating. A fantastic job. Was the paint home made too?" '
       portrait: 
@@ -173,6 +177,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Yes, indeed."'
       portrait: 
@@ -185,6 +190,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Ah. Do a lot of Hive Bugs create paint?" '
       portrait: 
@@ -197,6 +203,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Only Growers, and they mostly create chemicals. ANYWAYS, I am glad you
         like it."'
@@ -210,6 +217,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: "\"It is standard CFE OFE, but I can tell it was \u2018well played\u2019.\""
       portrait: 
@@ -222,6 +230,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: 
       text: You feel prouder!
       portrait: 
@@ -236,6 +245,7 @@ MonoBehaviour:
         value: 3
       addItem: []
       removeItem: []
+      tryRunCutscene: ALARM
   - reactionCollectionName: Received order
     conditionList:
     - name: HALFRED
@@ -253,6 +263,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -269,6 +280,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Hello there. To tell the truth, I am not particularly hungry." '
       portrait: 
@@ -281,6 +293,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: "\u201COh.\u201D"
       portrait: 
@@ -293,6 +306,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: "\u201CHowever, I have known about your arrival in advance, therefore,
         I have imagined that a gift should be created.\u201D "
@@ -306,6 +320,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: " \u201CI have baked you these cookies for you, following the instructions
         in a completely meticulous manner.\u201C "
@@ -319,6 +334,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: "\u201CAw, thank you...\u201D"
       portrait: 
@@ -331,6 +347,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: 
       text: Gained coconut flake cookie!
       portrait: 
@@ -347,6 +364,7 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: 23bb9dfa86bcef84c85ab56aba4b2f03, type: 3}
         name: Cookie
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Rest assured, I will be hungry later today, and visit you again. I just
         wanted to greet the new co-worker as soon as possible." '
@@ -360,6 +378,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: "\"Ah, alright, Mister\u2026\""
       portrait: 
@@ -372,6 +391,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Just call me Halfred."'
       portrait: 
@@ -384,6 +404,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Halfred?"'
       portrait: 
@@ -396,6 +417,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"My parents are of the humorous inclination." '
       portrait: 
@@ -408,6 +430,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Ah, I see. And what do you work here as, Halfred?"'
       portrait: 
@@ -420,6 +443,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"I am a nanoalchemisttechnician. It is a form of sufficiently advanced
         science."'
@@ -433,6 +457,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Ah, I see. Sounds complicated!"'
       portrait: 
@@ -445,6 +470,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Halfred
       text: '"Yes. Say, I have worked up quite a thirst from discussing, could you
         please bring me a cup of coffee?" '
@@ -458,6 +484,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
     - displayName: Grylla
       text: '"Sure thing!"'
       portrait: 
@@ -472,6 +499,7 @@ MonoBehaviour:
         value: 1
       addItem: []
       removeItem: []
+      tryRunCutscene: 
 --- !u!114 &114957314539803410
 MonoBehaviour:
   m_ObjectHideFlags: 1

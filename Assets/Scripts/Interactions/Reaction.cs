@@ -29,5 +29,6 @@ public class Reaction
 
 	public List<string> removeItem = new List<string>();
 
+	public string tryRunCutscene;
 
 }

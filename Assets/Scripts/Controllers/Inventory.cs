@@ -30,6 +30,11 @@ public class Inventory : MonoBehaviour
 
 	}
 
+	public void ClearItems()
+	{
+		items = new Item[numItemSlots];
+	}
+
 	public void FindImageObject(Transform target, string name, int index)
 	{		
 		var slotTransform = target.Find (name);

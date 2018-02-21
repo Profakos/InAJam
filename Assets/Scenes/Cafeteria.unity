@@ -530,39 +530,19 @@ Prefab:
       objectReference: {fileID: 12755715}
     - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
         type: 2}
-      propertyPath: reactionActiavateables.Array.data[0]
-      value: 
-      objectReference: {fileID: 145786480}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: reactionActiavateables.Array.data[1]
+      propertyPath: reactionTargets.Array.data[0]
       value: 
       objectReference: {fileID: 58926951}
     - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
         type: 2}
-      propertyPath: reactionActiavateables.Array.data[2]
+      propertyPath: reactionTargets.Array.data[1]
+      value: 
+      objectReference: {fileID: 145786480}
+    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
+        type: 2}
+      propertyPath: reactionTargets.Array.data[2]
       value: 
       objectReference: {fileID: 1562099719}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[6].text
-      value: '"Gasp! New friends!"'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[5].text
-      value: "\"Thankfully no fireworks this time. Hmph. Good day.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[4].text
-      value: "\"THE GATE HAS OPENED BEFORE ME, AND I ARRIVE. HI.\u201D "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114363652587704778, guid: fa264d19b7e98a34786f7248edff8ca4,
-        type: 2}
-      propertyPath: cutscenesCollection.Array.data[2].reactions.Array.data[2].text
-      value: '"Oi, you heard that?" '
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa264d19b7e98a34786f7248edff8ca4, type: 2}
   m_IsPrefabParent: 0
@@ -1553,10 +1533,6 @@ Prefab:
     - target: {fileID: 1681900548164964, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1681900548164964, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}
-      propertyPath: m_Name
-      value: Gardener
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8be54a9ff9530d4688f98732e26b920, type: 2}

@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 	private Coroutine currentWordByWord = null;
 	private int choiceIndex = 0;
 
-	public List<GameObject> reactionActiavateables = new List<GameObject>();
+	public List<GameObject> reactionTargets = new List<GameObject>();
 
 	public List<ReactionCollection> cutscenesCollection = new List<ReactionCollection>();
 	private List<Reaction> queuedReactions = new List<Reaction>();
@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Start()
 	{
-		InsertCutscene ("START", 0);
+		InsertCutscene ("START", 0, false);
 	}
 
 	void Update ()
@@ -118,6 +118,44 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown ("escape")) 
 		{
 			Application.Quit ();
+		}
+
+		if (Input.GetKeyDown (KeyCode.F1)) 
+		{
+			gameState.Clear (); 
+
+			inventory.ClearItems ();
+
+			var cookie = new Item ();
+			cookie.name = "Cookie";
+			cookie.sprite = null;
+
+			inventory.AddItem (cookie);
+
+			gameState.Add ("COOKIE", "1"); 
+			gameState.Add ("NSMITH", "4");
+			gameState.Add("CHLORINE", "2");
+			gameState.Add("HALFRED", "3");
+
+			var eldritch = reactionTargets.Find (m => m.name == "Eldritch");
+			if (eldritch != null) 
+			{
+				eldritch.SetActive(true);
+			}
+
+			var gardener = reactionTargets.Find (m => m.name == "Gardener");
+			if (gardener != null) 
+			{
+				gardener.SetActive(true);
+			}
+
+			var alchemist = reactionTargets.Find (m => m.name == "Alchemist");
+			if (alchemist != null) 
+			{
+				alchemist.SetActive(true);
+			}
+ 
+			return;
 		}
 
 		if (!acceptInput)
@@ -135,9 +173,19 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void InsertCutscene(string name, int insertLocation)
+	public void InsertCutscene(string name, int insertLocation, bool checkCondition)
 	{
 		var cutScene = cutscenesCollection.Find (m => m.reactionCollectionName == name);
+
+		if (cutScene == null) 
+		{
+			return;
+		}
+
+		if (checkCondition && !cutScene.ConditionSatisfied(gameState)) 
+		{
+			return;
+		}
 
 		if (cutScene != null)
 		{
@@ -179,7 +227,7 @@ public class PlayerController : MonoBehaviour {
 			{
 				foreach (string name in queuedReactions[0].objectsToDisable) 
 				{
-					var gO = reactionActiavateables.Find (r => r.name == name);
+					var gO = reactionTargets.Find (r => r.name == name);
 
 					if (gO == null)
 					{
@@ -194,7 +242,7 @@ public class PlayerController : MonoBehaviour {
 			{
 				foreach (string name in queuedReactions[0].objectsToEnable) 
 				{
-					var gO = reactionActiavateables.Find (r => r.name == name);
+					var gO = reactionTargets.Find (r => r.name == name);
 
 					if (gO == null)
 					{
@@ -234,7 +282,7 @@ public class PlayerController : MonoBehaviour {
 					inventory.RemoveItem (item);
 				}
 			}
-
+			 
 			return;
 		}
 
@@ -279,7 +327,12 @@ public class PlayerController : MonoBehaviour {
 				{
 					choiceBox.SetActive (false);
 					var selectedOption = queuedReactions [0].options [choiceIndex];
-					InsertCutscene (selectedOption, 1);
+					InsertCutscene (selectedOption, 1, false);
+				}
+ 
+				if (!string.IsNullOrEmpty (queuedReactions [0].tryRunCutscene)) 
+				{
+					InsertCutscene (queuedReactions [0].tryRunCutscene, 1, true);
 				}
 
 				queuedReactions.RemoveAt (0);
