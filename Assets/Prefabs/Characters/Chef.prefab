@@ -190,11 +190,19 @@ MonoBehaviour:
   speed: 5
   talkBox: {fileID: 0}
   inventory: {fileID: 0}
+  spriteCache:
+  - {fileID: 21300000, guid: 23bb9dfa86bcef84c85ab56aba4b2f03, type: 3}
+  - {fileID: 21300000, guid: 19001eec53029ce498f399ef53f3ef41, type: 3}
   reactionTargets:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 1768925194488270}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cutscenesCollection:
   - reactionCollectionName: START
     conditionList: []
@@ -418,7 +426,7 @@ MonoBehaviour:
       value: 3
     reactions:
     - displayName: Loudspeaker
-      text: Attention all employees!
+      text: '"Attention all employees!"'
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -426,6 +434,120 @@ MonoBehaviour:
       options: []
       objectsToDisable: []
       objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"There has been a severe miscalculation at quantum testing."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"A superimposed feline has formed on Level 4, and escaped past our guards."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 3ac50f0ea772569478644bef476ae3b0, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Oh... oh dear."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 3ac50f0ea772569478644bef476ae3b0, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"Please stay in your rooms for your safety. Vacate the corridors. Lockdown
+        will begin soon."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 3ac50f0ea772569478644bef476ae3b0, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: '"Wait for meeee!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: e756935f19e3bf2499f4729b578ab6ed, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Denburg
+      text: '"WOAH! AAAA!!!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 72bb5624d32c5b541a89525ee897757e, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: 'Lockdown finished, corridors empty. Have a nice day. '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 72bb5624d32c5b541a89525ee897757e, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: Something horrible is scratching at the safety door.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable:
+      - Treshold
+      - Alchemist
+      - Eldritch
+      - Gardener
+      objectsToEnable:
+      - Door
+      - AlchemistAlert
+      - EldritchAlert
+      - GardenerAlert
+      - Dragon
       setGameState: []
       addItem: []
       removeItem: []

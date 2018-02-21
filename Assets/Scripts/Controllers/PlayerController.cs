@@ -31,13 +31,13 @@ public class PlayerController : MonoBehaviour {
 	private Coroutine currentWordByWord = null;
 	private int choiceIndex = 0;
 
+	public List<Sprite> spriteCache = new List<Sprite> ();
 	public List<GameObject> reactionTargets = new List<GameObject>();
-
 	public List<ReactionCollection> cutscenesCollection = new List<ReactionCollection>();
 	private List<Reaction> queuedReactions = new List<Reaction>();
 
 	private Dictionary<string, string> gameState = new Dictionary<string, string> (); 
-
+	 
 	public Direction facing = Direction.West;
 
 	public Sprite spriteWest;
@@ -128,13 +128,13 @@ public class PlayerController : MonoBehaviour {
 
 			var cookie = new Item ();
 			cookie.name = "Cookie";
-			cookie.sprite = null;
+			cookie.sprite = spriteCache.Find(m => m.name == "cookie");
 
 			inventory.AddItem (cookie);
 
 			gameState.Add ("COOKIE", "1"); 
 			gameState.Add ("NSMITH", "4");
-			gameState.Add("CHLORINE", "2");
+			gameState.Add("CHLORINE", "3");
 			gameState.Add("HALFRED", "3");
 
 			var eldritch = reactionTargets.Find (m => m.name == "Eldritch");
@@ -154,6 +154,8 @@ public class PlayerController : MonoBehaviour {
 			{
 				alchemist.SetActive(true);
 			}
+
+			InsertCutscene ("ALARM", 0, false);
  
 			return;
 		}
@@ -282,8 +284,7 @@ public class PlayerController : MonoBehaviour {
 					inventory.RemoveItem (item);
 				}
 			}
-			 
-			return;
+		
 		}
 
 		if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))

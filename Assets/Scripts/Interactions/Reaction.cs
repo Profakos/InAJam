@@ -31,4 +31,4 @@ public class Reaction
 
 	public string tryRunCutscene;
 
-}
+} 
