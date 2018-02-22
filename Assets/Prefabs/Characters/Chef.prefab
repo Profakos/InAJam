@@ -203,6 +203,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cutscenesCollection:
   - reactionCollectionName: START
     conditionList: []
@@ -548,6 +551,59 @@ MonoBehaviour:
       - EldritchAlert
       - GardenerAlert
       - Dragon
+      setGameState:
+      - name: ALERT
+        value: 1
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+  - reactionCollectionName: GUARD
+    conditionList:
+    - name: DENBURG
+      value: 1
+    reactions:
+    - displayName: Grylla
+      text: '"You should guard Dr Denburg. He seems to unconscious, and he is the
+        cat''s target."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: N'smithothep
+      text: '"VERY WELL. I WILL GUARD HIS DREAMS AND SKIN!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable:
+      - EldritchAlert
+      objectsToEnable:
+      - EldritchGuard
+      setGameState:
+      - name: NSMITHALARMED
+        value: 2
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: The scratching at the door has become angrier.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable:
+      - EldritchAlert
+      objectsToEnable:
+      - EldritchGuard
       setGameState: []
       addItem: []
       removeItem: []

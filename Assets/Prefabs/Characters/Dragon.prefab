@@ -100,11 +100,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Denburg second examine
+    conditionList:
+    - name: DENBURG
+      value: 1
+    reactions:
+    - displayName: 
+      text: '*worried snoring noises* '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
-    reactions: []
+    reactions:
+    - displayName: Denburg
+      text: '"The cat! The cat!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Shh, it is okay, you are amongst friends now."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Denburg
+      text: "\"No, no! I saw it first! It won\u2019t stop until it gets me for collapsing
+        its waveform!\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"There there, sir. What is your name?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Denburg
+      text: "\"Dr... Denburg\u2026\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Dr Denburg, is there anything I can do for you? Hello?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: The spherical dragon seems to have fainted. The stress was too much for
+        him.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: 'Now he is snoring? Better to not disturb him. '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: DENBURG
+        value: 1
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
 --- !u!114 &114965942430371840
 MonoBehaviour:
   m_ObjectHideFlags: 1

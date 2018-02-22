@@ -91,7 +91,163 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: alert is active
+    conditionList:
+    - name: ALERT
+      value: 1
+    reactions:
+    - displayName: 
+      text: The emergency intercom seems to be active.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Hello? Grylla #113 speaking. The cat is clawing at the door of the cafeteria."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"I thought we should tell you."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"Please remain calm. We are aware of your situation."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"We saw that the beast''s quarry entered your room. Is he alright?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"I... I think so..."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"Good. Please remain calm, don''t do anything reckless."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"But brace yourselves. The security team got delayed, but they will arrive."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Loudspeaker
+      text: '"The cat didn''t lock them in the decontamination chamber. That statement
+        is a lie."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '...'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: ALERT
+        value: 2
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+  - reactionCollectionName: rescue is unlikely
+    conditionList:
+    - name: ALERT
+      value: 2
+    reactions:
+    - displayName: Loudspeaker
+      text: '"Please be safe. Please."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -103,8 +259,12 @@ MonoBehaviour:
       flipImage: 0
       sprite: {fileID: 0}
       options: []
-      objectsToRemove: []
+      objectsToDisable: []
+      objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
 --- !u!212 &212302952771965812
 SpriteRenderer:
   m_ObjectHideFlags: 1

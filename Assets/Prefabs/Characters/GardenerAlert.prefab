@@ -112,11 +112,308 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Chlorine seeks banana
+    conditionList:
+    - name: CHLORINEALARMED
+      value: 1
+    reactions:
+    - displayName: 
+      text: '"If the fruit is really in the kitchen...oh dear..."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+  - reactionCollectionName: Chlorine gets banana
+    conditionList:
+    - name: CHLORINEALARMED
+      value: 2
+    reactions:
+    - displayName: Grylla
+      text: "\"Was this your\u2026 err\u2026 Dangerous Fruit?\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: "\"Oh thank &#- I mean, thank gosh! Please don\u2019t tell anyone I have
+        lost it\u2026\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"You can trust me."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: '"Thank you my friend."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"You know, I never would have thought that a banana could be this dangerous."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: '"I assure you, it is actually a Dangerous Fruit. Old family recipe!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: "\"I think I\u2019ll stick to jam...\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: CHLORINEALARMED
+        value: 3
+      addItem: []
+      removeItem:
+      - Banana
+      tryRunCutscene: 
+    - displayName: 
+      text: The scratching at the door has become angrier.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+  - reactionCollectionName: Chlorine has banana
+    conditionList:
+    - name: CHLORINEALARMED
+      value: 3
+    reactions:
+    - displayName: Chlorine
+      text: "\"I really hope I won\u2019t have to use this fruit, because made inert,
+        it is makes a spicy dinner without blowing you up.\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
-    reactions: []
+    reactions:
+    - displayName: Chlorine
+      text: '"@#&#` cats!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: '"Sorry, I am just, a smidgen bit annoyed right now! "'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Annoyed?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: '"Oh, I figured something like this would happen one day. I was prepared.
+        I have a Dangerous Fruit in my pockets, stashed for emergencies like this."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: "\" I didn\u2019t think that strange energy research was this strange.\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: '"Well, to tell the truth, I expected dogs made of time, as opposed to
+        cats made of physics."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: "\"Oh wait\u2026 oh no\u2026\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: Oh no...?
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: "\"The Fruit! It probably fell out of my pockets earlier this morning\u2026\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"What was it like? I have found a lost fruit today in the elevator."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Chlorine
+      text: "\"It was long and yellow\u2026 I really hope that is the fruit you found...\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: CHLORINEALARMED
+        value: 1
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
 --- !u!212 &212342815787257382
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -140,6 +140,7 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: 77e16ffca665cae469f6345d6ca074bb, type: 3}
         name: MarmelCrois
       removeItem: []
+      tryRunCutscene: 
   - reactionCollectionName: Jam was ordered
     conditionList:
     - name: CHLORINE
@@ -161,6 +162,7 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: 9d2acc41b46244c4da4ba65336f2390f, type: 3}
         name: Jamtoast
       removeItem: []
+      tryRunCutscene: 
   - reactionCollectionName: Marmelade was ordered
     conditionList:
     - name: NSMITH
@@ -182,6 +184,7 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: 77e16ffca665cae469f6345d6ca074bb, type: 3}
         name: MarmelCrois
       removeItem: []
+      tryRunCutscene: 
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -198,6 +201,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
 --- !u!212 &212176588203075028
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 114122098690355134}
   - component: {fileID: 50868010784867400}
   - component: {fileID: 61537448055512798}
-  m_Layer: 0
+  - component: {fileID: 114821356143493568}
+  m_Layer: 8
   m_Name: Chefhand
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -100,6 +101,148 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+--- !u!114 &114821356143493568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1114542604154128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conditionalReactions:
+  - reactionCollectionName: Finds hand
+    conditionList:
+    - name: HALFREDALARMED
+      value: 1
+    reactions:
+    - displayName: Grylla
+      text: '"Halfred, I think this... arm might work?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Halfred
+      text: '"I confess, I was hoping you would pick something else."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Why?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Halfred
+      text: '"Its just... what if the CHEFINATOR-3000 came back for it!!!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Grylla
+      text: '"Well, we can think about that later."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: Halfred
+      text: '"...Very Well. Very well then. Please concentrate on it, if we have to
+        perform the ritual. SCIENCE I MEAN. Not a ritual."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: HALFREDALARMED
+        value: 2
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: The scratching at the door has become angrier.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+  defaultReaction:
+    reactionCollectionName: 
+    conditionList: []
+    reactions:
+    - displayName: 
+      text: This is an arm with a circular saw on its end, embedded in the wall. The
+        saw is made of silver.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+    - displayName: 
+      text: The CHEFINATOR-3000 probably chucked it across the room in disgust.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
 --- !u!212 &212126428917756282
 SpriteRenderer:
   m_ObjectHideFlags: 1
