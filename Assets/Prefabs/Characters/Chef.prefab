@@ -608,12 +608,35 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: CAT
+  - reactionCollectionName: CAT
+    conditionList:
+    - name: NSMITHALARMED
+      value: 2
+    - name: CHLORINEALARMED
+      value: 3
+    - name: HALFREDALARMED
+      value: 2
+    reactions:
+    - displayName: 
+      text: The scratching seems to have stopped.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
       tryRunCutscene: 
   facing: 3
   spriteWest: {fileID: 21300000, guid: 8289f2032fd455b4ba2b92393d535e47, type: 3}
   spriteEast: {fileID: 21300000, guid: d5ae8a2fdb036f4479ecf7958f8abe96, type: 3}
   spriteNorth: {fileID: 21300000, guid: 80909f7636864f446b59a3447a246dcf, type: 3}
   spriteSouth: {fileID: 21300000, guid: 904bb7b4826bff64cba1dca6dfbb4d63, type: 3}
+  startingScene: START
   spriteRenderer: {fileID: 0}
 --- !u!114 &114915165028449500
 MonoBehaviour:

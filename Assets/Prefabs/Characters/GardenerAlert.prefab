@@ -243,7 +243,7 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
-      tryRunCutscene: 
+      tryRunCutscene: CAT
   - reactionCollectionName: Chlorine has banana
     conditionList:
     - name: CHLORINEALARMED
@@ -361,7 +361,7 @@ MonoBehaviour:
       removeItem: []
       tryRunCutscene: 
     - displayName: Grylla
-      text: Oh no...?
+      text: '"Oh no...?"'
       portrait: 
       imageLocation: 0
       flipImage: 0

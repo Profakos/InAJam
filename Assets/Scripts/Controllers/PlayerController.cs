@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour {
 	public Sprite spriteNorth;
 	public Sprite spriteSouth;
 
+	public string startingScene;
+
 	[HideInInspector]
 	public SpriteRenderer spriteRenderer;
 
@@ -109,7 +111,10 @@ public class PlayerController : MonoBehaviour {
 
 	void Start()
 	{
-		InsertCutscene ("START", 0, false);
+		if (!string.IsNullOrEmpty (startingScene))
+		{
+			InsertCutscene (startingScene, 0, false);
+		}
 	}
 
 	void Update ()
