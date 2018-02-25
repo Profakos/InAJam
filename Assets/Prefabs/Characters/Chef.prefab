@@ -602,6 +602,7 @@ MonoBehaviour:
       options: []
       objectsToDisable:
       - EldritchAlert
+      - Dragon
       objectsToEnable:
       - EldritchGuard
       setGameState: []
