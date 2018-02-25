@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cafeteria.unity
     guid: e05eaf44ac42cf34fb5ee017a212db9f
+  - enabled: 1
+    path: Assets/Scenes/Catbattle.unity
+    guid: 0da7cea163f619848be21814d64c14aa

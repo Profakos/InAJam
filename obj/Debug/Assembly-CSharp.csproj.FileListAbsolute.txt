@@ -70,6 +70,5 @@ C:\Users\akosb\Documents\In A Jam\Temp\bin\Debug\UnityEngine.UIAutomation.xml
 C:\Users\akosb\Documents\In A Jam\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
 C:\Users\akosb\Documents\In A Jam\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\akosb\Documents\In A Jam\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
-C:\Users\akosb\Documents\In A Jam\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\akosb\Documents\In A Jam\obj\Debug\Assembly-CSharp.dll
 C:\Users\akosb\Documents\In A Jam\obj\Debug\Assembly-CSharp.pdb

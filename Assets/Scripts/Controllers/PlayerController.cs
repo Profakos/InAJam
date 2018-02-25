@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -114,6 +115,9 @@ public class PlayerController : MonoBehaviour {
 		if (!string.IsNullOrEmpty (startingScene))
 		{
 			InsertCutscene (startingScene, 0, false);
+		} else
+		{
+			acceptInput = true;
 		}
 	}
 
@@ -129,6 +133,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			gameState.Clear (); 
 
+			/*
 			inventory.ClearItems ();
 
 			var cookie = new Item ();
@@ -160,8 +165,8 @@ public class PlayerController : MonoBehaviour {
 				alchemist.SetActive(true);
 			}
 
-			InsertCutscene ("ALARM", 0, false);
- 
+			InsertCutscene ("ALARM", 0, false); */
+			InsertCutscene ("CAT", 0, false);
 			return;
 		}
 
@@ -341,6 +346,12 @@ public class PlayerController : MonoBehaviour {
 					InsertCutscene (queuedReactions [0].tryRunCutscene, 1, true);
 				}
 
+				if(!string.IsNullOrEmpty(queuedReactions[0].swapScene))
+				{
+					SceneManager.LoadScene(queuedReactions[0].swapScene);
+					return;
+				}
+
 				queuedReactions.RemoveAt (0);
 				fireNextLine = true;
 				if (queuedReactions.Count == 0) 
@@ -397,6 +408,11 @@ public class PlayerController : MonoBehaviour {
 
 	public void HandleMove()
 	{
+		if (rigidBody == null)
+		{
+			return;
+		}
+
 		if(Input.GetKeyDown("space"))
 		{ 
 			if (ExamineFront ())
@@ -409,8 +425,9 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
-
+ 
 		rigidBody.velocity = movement * speed;
+		
 
 		ChangeFacing (movement.normalized);
  
@@ -575,7 +592,11 @@ public class PlayerController : MonoBehaviour {
 		queuedReactions.AddRange (reactionCollection.reactions);
 
 		StartCoroutine(OpenDialog());
-		rigidBody.velocity = Vector2.zero;		
+
+		if (rigidBody != null)
+		{
+			rigidBody.velocity = Vector2.zero;	
+		}	
 
 		return true;
 	}

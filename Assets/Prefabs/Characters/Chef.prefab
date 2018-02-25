@@ -224,6 +224,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Loudspeaker
       text: '"We extend a hearty welcome to Grylla #113, to HECKWALKERS INC, strange
         energy research facility."'
@@ -238,6 +239,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Grylla
       text: '"That is me!" '
       portrait: 
@@ -251,6 +253,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Loudspeaker
       text: '"She will soon finish the opening ceremony. Please be nice to her. We
         don''t want a repeat of the CHEFINATOR-3000 incident."'
@@ -265,6 +268,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Grylla
       text: "\"Incident\u2026? Er... No, can't think of that right now.\" "
       portrait: 
@@ -278,6 +282,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Grylla
       text: '"I must focus to make the Queen proud... To fulfill my destiny..."'
       portrait: 
@@ -291,6 +296,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: 
       text: Behind you, the painting of the Queen gives a silent thumbs up.
       portrait: 
@@ -304,6 +310,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
   - reactionCollectionName: Don't the don't
     conditionList: []
     reactions:
@@ -320,6 +327,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
   - reactionCollectionName: Gong the gong
     conditionList: []
     reactions:
@@ -336,6 +344,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: 
       text: GOOOONNNNGGG
       portrait: 
@@ -349,6 +358,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: ???
       text: '"Oi, you heard that?" '
       portrait: 
@@ -362,6 +372,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Chlorine
       text: '"They are open! Hullo!!!!"'
       portrait: 
@@ -375,6 +386,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: "N\u2019smithothep"
       text: '"THE GATE HAS OPENED BEFORE ME, AND I ARRIVE. HI."'
       portrait: 
@@ -388,6 +400,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Halfred
       text: '"Thankfully no fireworks this time. Hmph. Good day."'
       portrait: 
@@ -401,6 +414,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Grylla
       text: '"Gasp! New friends!"'
       portrait: 
@@ -419,6 +433,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
   - reactionCollectionName: ALARM
     conditionList:
     - name: CHLORINE
@@ -441,6 +456,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Loudspeaker
       text: '"There has been a severe miscalculation at quantum testing."'
       portrait: 
@@ -454,6 +470,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Loudspeaker
       text: '"A superimposed feline has formed on Level 4, and escaped past our guards."'
       portrait: 
@@ -467,6 +484,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Grylla
       text: '"Oh... oh dear."'
       portrait: 
@@ -480,6 +498,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Loudspeaker
       text: '"Please stay in your rooms for your safety. Vacate the corridors. Lockdown
         will begin soon."'
@@ -494,6 +513,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: 
       text: '"Wait for meeee!"'
       portrait: 
@@ -507,6 +527,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Denburg
       text: '"WOAH! AAAA!!!"'
       portrait: 
@@ -520,6 +541,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: Loudspeaker
       text: 'Lockdown finished, corridors empty. Have a nice day. '
       portrait: 
@@ -533,6 +555,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: 
       text: Something horrible is scratching at the safety door.
       portrait: 
@@ -557,6 +580,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
   - reactionCollectionName: GUARD
     conditionList:
     - name: DENBURG
@@ -576,6 +600,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: N'smithothep
       text: '"VERY WELL. I WILL GUARD HIS DREAMS AND SKIN!"'
       portrait: 
@@ -593,6 +618,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
     - displayName: 
       text: The scratching at the door has become angrier.
       portrait: 
@@ -609,6 +635,7 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: CAT
+      swapScene: 
   - reactionCollectionName: CAT
     conditionList:
     - name: NSMITHALARMED
@@ -631,6 +658,63 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+    - displayName: 
+      text: Looks like you are safe after all!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+    - displayName: 
+      text: Or wait...
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 7f2cdfe448c111e4aad134098411458d, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+    - displayName: 
+      text: Isn't that door supposed to be airtight?
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 27fd982cf0822884eb23a58c904d61e3, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+    - displayName: 
+      text: Clever girl...
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 21300000, guid: 2323ef031a912d9479b8b5bb1185eacd, type: 3}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: Catbattle
   facing: 3
   spriteWest: {fileID: 21300000, guid: 8289f2032fd455b4ba2b92393d535e47, type: 3}
   spriteEast: {fileID: 21300000, guid: d5ae8a2fdb036f4479ecf7958f8abe96, type: 3}
