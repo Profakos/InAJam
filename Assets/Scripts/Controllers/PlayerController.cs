@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 	private GameObject imageBox;
 
 	public Inventory inventory;
+	public BattleMenu battleMenu;
 
 	private UnityEngine.UI.Text talkBoxText;
 	private UnityEngine.UI.Text nameBoxText;
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 	private bool fireNextLine = true;
 	private bool lineCompleted = false;
 	private Coroutine currentWordByWord = null;
-	private int choiceIndex = 0;
+	private int multipleOptionChoiceIndex = 0;
 
 	public List<Sprite> spriteCache = new List<Sprite> ();
 	public List<GameObject> reactionTargets = new List<GameObject>();
@@ -108,6 +109,13 @@ public class PlayerController : MonoBehaviour {
 		{
 			inventory = inventoryComponent;
 		}
+
+		var battleMenuComponent = transform.GetComponent<BattleMenu> ();
+
+		if (battleMenuComponent != null) 
+		{
+			battleMenu = battleMenuComponent;
+		}
 	}
 
 	void Start()
@@ -178,7 +186,10 @@ public class PlayerController : MonoBehaviour {
 		if (dialogOpened)
 		{
 			HandleDialog ();
-		} 
+		} else if (battleMenu != null)
+		{
+			HandleBattleMenu ();
+		}
 		else
 		{
 			HandleMove ();
@@ -207,6 +218,11 @@ public class PlayerController : MonoBehaviour {
 		{
 			acceptInput = false;
 		}
+	}
+
+	public void HandleBattleMenu()
+	{
+		
 	}
 
 	public void HandleDialog()
@@ -301,11 +317,11 @@ public class PlayerController : MonoBehaviour {
 		{
 			if (queuedReactions [0].options.Count != 0)
 			{
-				choiceIndex--;
+				multipleOptionChoiceIndex--;
 
-				if (choiceIndex < 0)
+				if (multipleOptionChoiceIndex < 0)
 				{
-					choiceIndex = queuedReactions [0].options.Count - 1;
+					multipleOptionChoiceIndex = queuedReactions [0].options.Count - 1;
 				}
 
 				DisplayOptions ();
@@ -317,11 +333,11 @@ public class PlayerController : MonoBehaviour {
 		{
 			if (queuedReactions [0].options.Count != 0)
 			{
-				choiceIndex++;
+				multipleOptionChoiceIndex++;
 
-				if (choiceIndex >= queuedReactions [0].options.Count)
+				if (multipleOptionChoiceIndex >= queuedReactions [0].options.Count)
 				{
-					choiceIndex = 0;
+					multipleOptionChoiceIndex = 0;
 				}
 
 				DisplayOptions ();
@@ -337,7 +353,7 @@ public class PlayerController : MonoBehaviour {
 				if (queuedReactions [0].options.Count > 0)
 				{
 					choiceBox.SetActive (false);
-					var selectedOption = queuedReactions [0].options [choiceIndex];
+					var selectedOption = queuedReactions [0].options [multipleOptionChoiceIndex];
 					InsertCutscene (selectedOption, 1, false);
 				}
  
@@ -377,7 +393,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (options != null && options.Count > 0)
 		{
-			choiceIndex = 0;
+			multipleOptionChoiceIndex = 0;
 			DisplayOptions ();
 		}
 
@@ -394,7 +410,7 @@ public class PlayerController : MonoBehaviour {
 
 		foreach (var choice in queuedReactions[0].options)
 		{ 
-			if (choiceIndex == currentLine)
+			if (multipleOptionChoiceIndex == currentLine)
 			{
 				displayText += ">";
 			}
