@@ -120,6 +120,11 @@ public class PlayerController : MonoBehaviour {
 
 	void Start()
 	{
+		if (battleMenu != null) 
+		{
+			battleMenu.EnableUI (false);
+		}
+
 		if (!string.IsNullOrEmpty (startingScene))
 		{
 			InsertCutscene (startingScene, 0, false);
@@ -186,7 +191,7 @@ public class PlayerController : MonoBehaviour {
 		if (dialogOpened)
 		{
 			HandleDialog ();
-		} else if (battleMenu != null)
+		} else if (battleMenu != null && battleMenu.battlePanelObject.activeInHierarchy)
 		{
 			HandleBattleMenu ();
 		}
@@ -222,7 +227,27 @@ public class PlayerController : MonoBehaviour {
 
 	public void HandleBattleMenu()
 	{
-		
+		if (Input.GetKeyDown (KeyCode.RightArrow) || Input.GetKeyDown (KeyCode.D)) 
+		{
+			battleMenu.ShiftCursor (1);
+		}
+
+		if (Input.GetKeyDown (KeyCode.LeftArrow) || Input.GetKeyDown (KeyCode.A)) 
+		{
+			battleMenu.ShiftCursor (-1);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Space)) 
+		{
+			ReactionCollection reactionCollection = battleMenu.Interact (gameState);
+
+			if (reactionCollection == null && reactionCollection.reactions.Count == 0) 
+			{
+				return;
+			}
+
+			QueueReactions (reactionCollection);
+		}
 	}
 
 	public void HandleDialog()
@@ -350,25 +375,30 @@ public class PlayerController : MonoBehaviour {
 		{   	
 			if (lineCompleted) 
 			{
-				if (queuedReactions [0].options.Count > 0)
-				{
-					choiceBox.SetActive (false);
-					var selectedOption = queuedReactions [0].options [multipleOptionChoiceIndex];
-					InsertCutscene (selectedOption, 1, false);
-				}
+				if (queuedReactions.Count > 0) {
+
+					if (queuedReactions [0].options.Count > 0) {
+						choiceBox.SetActive (false);
+						var selectedOption = queuedReactions [0].options [multipleOptionChoiceIndex];
+						InsertCutscene (selectedOption, 1, false);
+					}
  
-				if (!string.IsNullOrEmpty (queuedReactions [0].tryRunCutscene)) 
-				{
-					InsertCutscene (queuedReactions [0].tryRunCutscene, 1, true);
+					if (!string.IsNullOrEmpty (queuedReactions [0].tryRunCutscene)) {
+						InsertCutscene (queuedReactions [0].tryRunCutscene, 1, true);
+					}
+
+					if (!string.IsNullOrEmpty (queuedReactions [0].swapScene)) {
+						SceneManager.LoadScene (queuedReactions [0].swapScene);
+						return;
+					}
+
+					if (battleMenu != null) {
+						battleMenu.EnableUI (queuedReactions [0].battleMode);
+					}
+
+					queuedReactions.RemoveAt (0);
 				}
 
-				if(!string.IsNullOrEmpty(queuedReactions[0].swapScene))
-				{
-					SceneManager.LoadScene(queuedReactions[0].swapScene);
-					return;
-				}
-
-				queuedReactions.RemoveAt (0);
 				fireNextLine = true;
 				if (queuedReactions.Count == 0) 
 				{
@@ -601,6 +631,13 @@ public class PlayerController : MonoBehaviour {
 			return false;
 		}
 
+		QueueReactions (reactionCollection);
+
+		return true;
+	}
+
+	public void QueueReactions(ReactionCollection reactionCollection)
+	{
 		acceptInput = false;
 
 		queuedReactions.Clear (); 
@@ -613,9 +650,8 @@ public class PlayerController : MonoBehaviour {
 		{
 			rigidBody.velocity = Vector2.zero;	
 		}	
-
-		return true;
 	}
+
 
 	public IEnumerator CloseDialog()
 	{

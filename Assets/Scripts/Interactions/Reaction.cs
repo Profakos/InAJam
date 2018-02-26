@@ -32,4 +32,6 @@ public class Reaction
 	public string tryRunCutscene;
 
 	public string swapScene;
+
+	public bool battleMode;
 } 
