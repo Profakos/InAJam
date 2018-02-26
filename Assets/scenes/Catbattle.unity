@@ -137,15 +137,15 @@ RectTransform:
   m_GameObject: {fileID: 122782896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 704019044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -56, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &122782898
 MonoBehaviour:
@@ -204,15 +204,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 148193746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 99.97999, z: 0}
-  m_LocalScale: {x: 1.9995997, y: 1.9995997, z: 0.99979985}
+  m_LocalPosition: {x: 0, y: 49.999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1488699491}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 99.97999}
+  m_AnchoredPosition: {x: 0, y: 49.999996}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148193748
@@ -319,15 +319,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 582627501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: 1.9998, y: 1.9998, z: 1.0001999}
+  m_LocalPosition: {x: 0.48334122, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 704019044}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0.48334, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582627503
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 704019045}
   - component: {fileID: 704019047}
   m_Layer: 5
-  m_Name: BattlePanelButton0
+  m_Name: BattlePanelButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,18 +388,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 704019043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -274.10013, y: -0.000015258789, z: 0}
+  m_LocalPosition: {x: 308.82, y: 0.0000076293945, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 122782897}
   - {fileID: 582627502}
   m_Father: {fileID: 1041288326}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -274.10013, y: -0.000014305}
-  m_SizeDelta: {x: -618.3, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 308.82, y: 51.4}
+  m_SizeDelta: {x: 155.70001, y: 102.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704019045
 MonoBehaviour:
@@ -445,13 +445,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Already conjured
+    conditionList:
+    - name: SILVER
+      value: 1
+    reactions:
+    - displayName: 
+      text: You are already maintaining some sort of protective silver blob.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
+  - reactionCollectionName: Already bebananad
+    conditionList:
+    - name: SILVER
+      value: 2
+    reactions:
+    - displayName: 
+      text: You are already levitating a blob and a Dangerous Fruit. The latter which
+        is about to explode any moment now!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
     reactions:
-    - displayName: 
-      text: 
+    - displayName: Halfred
+      text: "\"Remember the notes I gave you, Miss Grylla\u2026\""
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -465,6 +506,99 @@ MonoBehaviour:
       tryRunCutscene: 
       swapScene: 
       battleMode: 0
+    - displayName: Grylla
+      text: "\"I do\u2026 I think... \""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Halfred
+      text: 'Let us focus now. '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: You perform a quick dance. The cat seems to be watching with an almost
+        scientific interest.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: The silver arm melts into a shining fluid, and flies across the room.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Halfred
+      text: '"Silver shield, active!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Chlorine
+      text: '"A silver lining to our situation..."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: SILVER
+        value: 1
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
 --- !u!1 &714781483
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +624,7 @@ RectTransform:
   m_GameObject: {fileID: 714781483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1488699491}
   m_RootOrder: 0
@@ -558,18 +692,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 787177896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89.29996, y: -0.0000076293945, z: 0}
-  m_LocalScale: {x: 1.0001999, y: 1.0001999, z: 1.0001999}
+  m_LocalPosition: {x: 113, y: 0.1000061, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1085730007}
   - {fileID: 1005194263}
   m_Father: {fileID: 1041288326}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 89.29996, y: -0.000011206001}
-  m_SizeDelta: {x: -618.3, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 113, y: 51.5}
+  m_SizeDelta: {x: 155.70001, y: 103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &787177898
 MonoBehaviour:
@@ -615,11 +749,448 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Silver is up
+    conditionList:
+    - name: SILVER
+      value: 1
+    reactions:
+    - displayName: Grylla
+      text: '"Again, Mr Cat, go away! Please release your anger, and leave our hive!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: The cat tries to lunge at you, but the silver blocks it!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Grylla
+      text: "\"Please, don\u2019t make us use EVEN MORE protective measures\u2026
+        \""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
+  - reactionCollectionName: FRUIT is up
+    conditionList:
+    - name: SILVER
+      value: 2
+    reactions:
+    - displayName: Grylla
+      text: '"This is the your last chance, Cat! Please, reconsider!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: "Undaunted, the cat chomps on the dangerous fruit laden silver soup\u2026 "
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: 'A blinding flash, and a deafening roar! You can hear both lightning,
+        fire, and the crackle of ice at once. '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: '...'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: CAT
+      text: '"THANK YOU, INSECTOID MORTAL."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: CAT
+      text: '"THIS FRUIT WAS A BRIEF AND WELCOME RESPITE FROM THE DRUDGERY OF MY ETERNAL
+        WORK."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: CAT
+      text: '"MAY YOUR ATOMS BE IN THE RIGHT PLACE AND THE RIGHT TIME."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: CAT
+      text: '" MAY YOUR ABSENCE BE FELT IN THE YAWNING VOID."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: 'And in a moment, the creature folded on itself, and vanished.  '
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: N'smithothep
+      text: '"HEY HE STOLE MY SPEECH STYLE! VILE OUTER CREATURE!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Denburg
+      text: "\"Wuh, huh, whahappan\u2026\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: N'smithothep
+      text: '"AHHA! YOU AWAKE! MY AEGIS HAS SHIELDED A LIFE!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Denburg
+      text: '"P-p-please put me down."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Chlorine
+      text: '"Well, the cat was right, a properly prepared Dangerous Fruit is delicious."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Halfred
+      text: "\"That\u2026 I can\u2019t decide if that was more anticlimatic or more
+        confusing.\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Grylla
+      text: '"I am just glad nobody got hurt. Good job, hive..."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Halfred
+      text: '"We might as well be, a hive of friendship. And good job on helping with
+        the alchemical process, Grylla."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Chlorine
+      text: '"Yeah!!! Golly well done. What a pickle that was! Or, jam, perhaps, hehehehee."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: You have brought honor to your old hive!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: And you have just now made a new one...
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: Good job, Grylla!
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
-    reactions: []
+    reactions:
+    - displayName: Grylla
+      text: "\"Please Cat sir, go away! I am sure this sciencedragon didn\u2019t mean
+        any harm!\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: N'smithothep
+      text: '"YOU SHALL NOT TOUCH THIS INNOCENT SLEEPER, MATHEMATICAL MEOW MENACE!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: "The cat almost manages to swipe N\u2019smithothep! It seemed to have
+        hesitated though\u2026"
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Grylla
+      text: "\"Please, don\u2019t make us use protective measures\u2026\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
 --- !u!1 &925588389
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,18 +1216,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925588389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -92.399994, y: -0.0000076293945, z: 0}
-  m_LocalScale: {x: 1.0001999, y: 1.0001999, z: 1.0001999}
+  m_LocalPosition: {x: -99, y: -0.1000061, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1932316996}
   - {fileID: 2129456492}
   m_Father: {fileID: 1041288326}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -92.4, y: -0.0000038147}
-  m_SizeDelta: {x: -618.3, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -99, y: 51.299988}
+  m_SizeDelta: {x: 155.70001, y: 103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925588391
 MonoBehaviour:
@@ -702,11 +1273,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: Throw at silver
+    conditionList:
+    - name: SILVER
+      value: 1
+    reactions:
+    - displayName: Grylla
+      text: '"What if... we put the fruit in the silver?"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Chlorine
+      text: "\"Hmm, and spoonfed it to the cat? Like\u2026 jam?\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: Halfred
+      text: '"Strange idea, but we could certainly make an attempt."'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: Chlorine bites off the bana- the Dangerous Fruit's tip, and throws it
+        at the silver! It lands with an ominous gloop.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: SILVER
+        value: 2
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
+  - reactionCollectionName: Already thrown
+    conditionList:
+    - name: SILVER
+      value: 2
+    reactions:
+    - displayName: Chlorine
+      text: '"Go, Fruit! Fulfill your destiny!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
-    reactions: []
+    reactions:
+    - displayName: Chlorine
+      text: "\"@&%, my eyes are watering, it is so painful to look at! I can\u2019t
+        get a good aim!\""
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
 --- !u!1 &987046324
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,15 +1439,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005194262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: 1.9994001, y: 1.9994001, z: 1}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787177897}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005194264
@@ -941,20 +1616,20 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1041288325}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -198.49994, z: 0}
+  m_LocalPosition: {x: 0, y: -166.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 704019044}
+  - {fileID: 1488699491}
   - {fileID: 925588390}
   - {fileID: 787177897}
-  - {fileID: 1488699491}
+  - {fileID: 704019044}
   m_Father: {fileID: 1215076877}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -198.49995}
-  m_SizeDelta: {x: 0.000061035156, y: -396.99994}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 51.399994}
+  m_SizeDelta: {x: 0, y: 102.79999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041288327
 MonoBehaviour:
@@ -1014,7 +1689,7 @@ RectTransform:
   m_GameObject: {fileID: 1085730006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 787177897}
   m_RootOrder: 0
@@ -1213,7 +1888,7 @@ RectTransform:
   m_GameObject: {fileID: 1215076873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.016666668, y: 0.016666668, z: 0.016666668}
+  m_LocalScale: {x: 0.022988506, y: 0.022988506, z: 0.022988506}
   m_Children:
   - {fileID: 1041288326}
   - {fileID: 1008255520}
@@ -1478,7 +2153,7 @@ GameObject:
   - component: {fileID: 1488699492}
   - component: {fileID: 1488699494}
   m_Layer: 5
-  m_Name: BattlePanelButton3
+  m_Name: BattlePanelButton0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,18 +2166,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1488699490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 271, y: -0.000015258789, z: 0}
-  m_LocalScale: {x: 1.0001999, y: 1.0001999, z: 1.0001999}
+  m_LocalPosition: {x: -308.82, y: 0.1000061, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 714781484}
   - {fileID: 148193747}
   m_Father: {fileID: 1041288326}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 271, y: -0.00001812}
-  m_SizeDelta: {x: -618.3, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -308.82, y: 51.5}
+  m_SizeDelta: {x: 155.70001, y: 103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1488699492
 MonoBehaviour:
@@ -1548,11 +2223,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee0d309144af489e2883613e9255d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalReactions: []
+  conditionalReactions:
+  - reactionCollectionName: 
+    conditionList:
+    - name: PRAY
+      value: 1
+    reactions:
+    - displayName: N'smithothep
+      text: '"ONE INVOKE IS ENOUGH! WE ARE ALREADY GINGERLY TOUCHED BY FATE!"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
-    reactions: []
+    reactions:
+    - displayName: N'smithothep
+      text: '"SHE WHO IS THE SUN, PLEASE BLESS US WITH YOUR MOTHERLY TENTACLES"'
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: Nothing seems to happen! The cat seems to be confused though.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState:
+      - name: PRAY
+        value: 1
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 1
 --- !u!1 &1537948687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +2486,7 @@ RectTransform:
   m_GameObject: {fileID: 1932316995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 925588390}
   m_RootOrder: 0
@@ -1869,7 +2596,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945016360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.12, y: -2.36, z: -0.05988782}
+  m_LocalPosition: {x: -2.63, y: -2.29, z: -0.05988782}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 987046325}
@@ -2050,15 +2777,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2129456491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000030517578, y: 100, z: 0}
-  m_LocalScale: {x: 1.9994001, y: 1.9994001, z: 1}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 925588390}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 100}
+  m_AnchoredPosition: {x: -0.00000059562, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129456493
