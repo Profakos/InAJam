@@ -119,6 +119,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: GUARD
+      swapScene: 
+      battleMode: 0
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -137,6 +139,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: '"Are you not also a beast from beyond, unable to be harmed on this plane?"'
       portrait: 
@@ -150,6 +154,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: '"WELL THE CAT IS ALSO FROM BEYOND (although a different beyond) SO I
         AM ALLOWED TO BE SCARED, DO NOT DARE TO TAUNT ME, MORTAL."'
@@ -164,6 +170,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\"I didn\u2019t mean to, sorry. It just struck me odd.\""
       portrait: 
@@ -177,6 +185,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: '"WELL WHY ARE YOU NOT SCARED?"'
       portrait: 
@@ -190,6 +200,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: '"Oh, I am scared. But I am more worried for the hive, than scared."'
       portrait: 
@@ -203,6 +215,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: N'smithothep
       text: '"HIVE???"'
       portrait: 
@@ -216,8 +230,10 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
-      text: "\" I mean, guests. Friends. I can\u2019t just cover in the corner when
+      text: "\" I mean, guests. Friends. I can\u2019t just cower in the corner when
         they are in danger.\""
       portrait: 
       imageLocation: 0
@@ -230,6 +246,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\"And didn\u2019t you talk about the deal\u2026 of friendship?\""
       portrait: 
@@ -243,6 +261,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: N'smithothep
       text: '"Ah. I see. You are right..."'
       portrait: 
@@ -256,6 +276,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: N'smithothep
       text: '"ERR, VERY WELL, I WILL STOP QUIVERING."'
       portrait: 
@@ -269,6 +291,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: '"Well, will you please come out from under the table then?"'
       portrait: 
@@ -284,6 +308,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: N'smithothep
       text: '"I SHALL... BUT HOW SHOULD I APPLY MY OTHERWORLDY MIGHT?"'
       portrait: 
@@ -297,6 +323,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Rylla
       text: '"Hmm..."'
       portrait: 
@@ -310,6 +338,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: GUARD
+      swapScene: 
+      battleMode: 0
 --- !u!114 &114203553747911050
 MonoBehaviour:
   m_ObjectHideFlags: 1

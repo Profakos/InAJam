@@ -85,8 +85,8 @@ MonoBehaviour:
     conditionList: []
     reactions:
     - displayName: 
-      text: 'A oil painting (technically) of Queen Of Hive #113. She is a Grower class
-        Bug Of Hive, just like you, and it was her who introduced you to cooking. '
+      text: 'An oil painting (technically) of Queen Of Hive #113. She is a Grower
+        class Bug Of Hive, just like you, and it was her who introduced you to cooking. '
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -95,6 +95,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: 
       text: You were kinda created for this job.
       portrait: 
@@ -105,6 +110,11 @@ MonoBehaviour:
       objectsToDisable: []
       objectsToEnable: []
       setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
 --- !u!114 &114616864197331024
 MonoBehaviour:
   m_ObjectHideFlags: 1

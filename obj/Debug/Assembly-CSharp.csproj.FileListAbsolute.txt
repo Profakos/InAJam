@@ -73,3 +73,4 @@ C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\akosb\Documents\InAJam\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 C:\Users\akosb\Documents\InAJam\obj\Debug\Assembly-CSharp.dll
 C:\Users\akosb\Documents\InAJam\obj\Debug\Assembly-CSharp.pdb
+C:\Users\akosb\Documents\InAJam\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache

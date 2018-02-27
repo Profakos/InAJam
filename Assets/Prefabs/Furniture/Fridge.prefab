@@ -137,6 +137,8 @@ MonoBehaviour:
         name: Banana
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -154,6 +156,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: 
       text: It houses a lone banana, which you have found in the elevator.
       portrait: 
@@ -167,9 +171,11 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: 
-      text: You have put it in the fridge for safekeeping. It felt the right thing
-        to do!
+      text: You have put it in the fridge for safekeeping. It felt like the right
+        thing to do!
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -181,6 +187,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
 --- !u!212 &212842497999325104
 SpriteRenderer:
   m_ObjectHideFlags: 1

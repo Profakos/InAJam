@@ -119,6 +119,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
   - reactionCollectionName: No ritual!
     conditionList:
     - name: NSMITH
@@ -137,6 +139,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: '"???"'
       portrait: 
@@ -150,6 +154,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
   - reactionCollectionName: Ritual done
     conditionList:
     - name: NSMITH
@@ -168,6 +174,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\"I still don\u2019t understand but\u2026 I am glad you like it?\""
       portrait: 
@@ -182,6 +190,8 @@ MonoBehaviour:
       removeItem:
       - MarmelCrois
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: "\"YOU HAVE GAINED THE FAVOUR OF N\u2019SMITHOTHEP! EVERYONE WILL HEAR
         ABOUT YOUR GOOD DEED!\" "
@@ -196,6 +206,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: '"T-thank you?"'
       portrait: 
@@ -209,6 +221,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: 
       text: You feel prouder! And terrified!
       portrait: 
@@ -224,6 +238,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: ALARM
+      swapScene: 
+      battleMode: 0
   - reactionCollectionName: Order received
     conditionList:
     - name: NSMITH
@@ -242,6 +258,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
   defaultReaction:
     reactionCollectionName: 
     conditionList: []
@@ -259,6 +277,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201CE-excuse me?\u201D "
       portrait: 
@@ -272,8 +292,10 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: ALARM
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
-      text: "\u201CI MEAN I HOPE YOU ARE HAVING A NICE THEY IN THIS FACILITY, ESPECIALLY
+      text: "\u201CI MEAN I HOPE YOU ARE HAVING A NICE DAY IN THIS FACILITY, ESPECIALLY
         NOW THAT I, N\u2019SMITHOTHEP, RESIDE IN YOUR PRESENCE.\u201D "
       portrait: 
       imageLocation: 0
@@ -286,6 +308,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201CErr, I hope you too?\u201D "
       portrait: 
@@ -299,6 +323,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: "\u201CTHE GREETING HAS BEEN DONE, THE DEAL IS SEALED.\u201D "
       portrait: 
@@ -312,6 +338,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201CW-w-what deal?\u201D "
       portrait: 
@@ -325,6 +353,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: "\u201CTHE DEAL...OF FRIENDSHIP.\u201D "
       portrait: 
@@ -338,6 +368,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201CGolly, er, what do you do around here, f-f-friend?\u201D "
       portrait: 
@@ -351,6 +383,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: "\u201CI VENTURE WHERE OTHERS DO NOT DARE. I CHECK RADIATION FIELDS.\u201D "
       portrait: 
@@ -364,6 +398,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201CAh, sounds dangerous.\u201D "
       portrait: 
@@ -377,6 +413,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: "\u201CDO NOT FEAR FOR ME, FOR I CAN NOT BE HARMED IN THIS PLANE, BUT
         N\u2019SMITHOTHEP APPRECIATES YOUR WORRY. MAY I, PLACE A REQUEST?\u201C"
@@ -391,6 +429,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201CY-y-es, what do you wish to have?\u201D "
       portrait: 
@@ -404,6 +444,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: '"AN OFFERING OF MARMALADE CROISSANT  MUST BE MADE AND THE RITUAL OF PLANTS
         MUST BE PERFORMED ON IT."'
@@ -418,6 +460,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: Grylla
       text: "\u201C???\u201D "
       portrait: 
@@ -431,6 +475,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: "N\u2019smithothep"
       text: "\u201CPRETTY PLEASE.\u201D "
       portrait: 
@@ -446,6 +492,8 @@ MonoBehaviour:
       addItem: []
       removeItem: []
       tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
 --- !u!114 &114872258078474632
 MonoBehaviour:
   m_ObjectHideFlags: 1

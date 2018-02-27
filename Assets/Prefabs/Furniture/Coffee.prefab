@@ -98,7 +98,7 @@ MonoBehaviour:
       value: 1
     reactions:
     - displayName: 
-      text: <minigame is not done yet, so this coffee is free>
+      text: Wait, a minute, this panel is just a drawing!
       portrait: 
       imageLocation: 0
       flipImage: 0
@@ -113,6 +113,25 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: e4ced1e5309723f469a6dc693c1272fb, type: 3}
         name: Coffee
       removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
+    - displayName: 
+      text: Oh well, at least you still got coffee. Maybe they'll install the minigame
+        later.
+      portrait: 
+      imageLocation: 0
+      flipImage: 0
+      sprite: {fileID: 0}
+      options: []
+      objectsToDisable: []
+      objectsToEnable: []
+      setGameState: []
+      addItem: []
+      removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
   defaultReaction:
     reactionCollectionName: Examine Portrait
     conditionList: []
@@ -129,6 +148,9 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: 
       text: 'It is a strange combination of an arcade machine and a coffee dispenser. '
       portrait: 
@@ -141,6 +163,9 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
     - displayName: 
       text: This was not what you meant when you ordered an exciting coffee machine.
       portrait: 
@@ -153,6 +178,9 @@ MonoBehaviour:
       setGameState: []
       addItem: []
       removeItem: []
+      tryRunCutscene: 
+      swapScene: 
+      battleMode: 0
 --- !u!212 &212945395642049940
 SpriteRenderer:
   m_ObjectHideFlags: 1

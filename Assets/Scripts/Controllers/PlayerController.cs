@@ -141,48 +141,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			Application.Quit ();
 		}
-
-		if (Input.GetKeyDown (KeyCode.F1)) 
-		{
-			gameState.Clear (); 
-
-			/*
-			inventory.ClearItems ();
-
-			var cookie = new Item ();
-			cookie.name = "Cookie";
-			cookie.sprite = spriteCache.Find(m => m.name == "cookie");
-
-			inventory.AddItem (cookie);
-
-			gameState.Add ("COOKIE", "1"); 
-			gameState.Add ("NSMITH", "4");
-			gameState.Add("CHLORINE", "3");
-			gameState.Add("HALFRED", "3");
-
-			var eldritch = reactionTargets.Find (m => m.name == "Eldritch");
-			if (eldritch != null) 
-			{
-				eldritch.SetActive(true);
-			}
-
-			var gardener = reactionTargets.Find (m => m.name == "Gardener");
-			if (gardener != null) 
-			{
-				gardener.SetActive(true);
-			}
-
-			var alchemist = reactionTargets.Find (m => m.name == "Alchemist");
-			if (alchemist != null) 
-			{
-				alchemist.SetActive(true);
-			}
-
-			InsertCutscene ("ALARM", 0, false); */
-			InsertCutscene ("CAT", 0, false);
-			return;
-		}
-
+  
 		if (!acceptInput)
 		{
 			return;
